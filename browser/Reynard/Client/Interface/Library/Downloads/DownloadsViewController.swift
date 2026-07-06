@@ -571,35 +571,22 @@ final class DownloadsViewController: UIViewController, UITableViewDataSource, UI
         present(sheet, animated: true)
     }
     
-//    private func revealInFiles(_ item: DownloadItemSnapshot) {
-//        guard let fileURL = item.fileURL else {
-//            return
-//        }
-//        
-//        let encodedPath = fileURL.path.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? ""
-//        guard let filesURL = URL(string: "shareddocuments://\(encodedPath)") else {
-//            return
-//        }
-//        
-//        UIApplication.shared.open(filesURL, options: [:], completionHandler: nil)
-//    }
-    
     private func revealInFiles(_ item: DownloadItemSnapshot) {
         guard let fileURL = item.fileURL else {
             return
         }
+        
+        var filePath = fileURL.path
 
-        var path = fileURL.path
-
-        // fixed /private
-        if path.hasPrefix("/var/") && !path.hasPrefix("/private/var/") {
-            path = "/private" + path
+        if filePath.hasPrefix("/var/") {
+            filePath = "/private" + filePath
         }
 
-        guard let url = URL(string: "shareddocuments://\(path)") else {
+        let encodedPath = filePath.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? ""
+        guard let filesURL = URL(string: "shareddocuments://\(encodedPath)") else {
             return
         }
-
-        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        
+        UIApplication.shared.open(filesURL, options: [:], completionHandler: nil)
     }
 }
