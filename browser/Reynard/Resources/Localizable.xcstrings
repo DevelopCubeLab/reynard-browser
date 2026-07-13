@@ -4,10 +4,10 @@
     " of %@" : {
       "comment" : "Total file size",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : " of %@"
+            "value" : "总大小%@"
           }
         }
       }
@@ -15,10 +15,10 @@
     "%@ · Opened Tab" : {
       "comment" : "Website host",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ · Opened Tab"
+            "value" : "已打开%@个标签页"
           }
         }
       }
@@ -28,8 +28,14 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "%1$@ · Visited %2$@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · 访问时间：%2$@"
           }
         }
       }
@@ -39,8 +45,14 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "%1$@ and %2$@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@和%2$@"
           }
         }
       }
@@ -48,10 +60,10 @@
     "%@ are disabled for Reynard. Open Settings to allow access." : {
       "comment" : "Permission list placeholder",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ are disabled for Reynard. Open Settings to allow access."
+            "value" : "%@已在Reynard中禁用。请打开设置以允许访问。"
           }
         }
       }
@@ -59,10 +71,10 @@
     "%@ has been updated. Approve the additional permissions before the updated version is installed. Dismissing this prompt keeps your current add-on version." : {
       "comment" : "Add-on name",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ has been updated. Approve the additional permissions before the updated version is installed. Dismissing this prompt keeps your current add-on version."
+            "value" : "%@已更新。请先允许新的权限，然后再安装新版本。关闭此提示将保留您当前的扩展版本。"
           }
         }
       }
@@ -70,10 +82,10 @@
     "%@ is disabled for Reynard. Open Settings to allow access." : {
       "comment" : "Permission list placeholder",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ is disabled for Reynard. Open Settings to allow access."
+            "value" : "%@已对Reynard禁用。请打开设置以允许访问。"
           }
         }
       }
@@ -81,10 +93,10 @@
     "%@ out of 5" : {
       "comment" : "Rating value",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ out of 5"
+            "value" : "%@ / 5"
           }
         }
       }
@@ -93,21 +105,15 @@
       "comment" : "Rating and review count",
       "localizations" : {
         "en" : {
-          "variations" : {
-            "plural" : {
-              "one" : {
-                "stringUnit" : {
-                  "state" : "translated",
-                  "value" : "%1$@ out of 5 • %2$d Review"
-                }
-              },
-              "other" : {
-                "stringUnit" : {
-                  "state" : "new",
-                  "value" : "%1$@ out of 5 • %2$d Reviews"
-                }
-              }
-            }
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ out of 5 • %2$d Reviews"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ / 5 • %2$d个评论"
           }
         }
       }
@@ -115,10 +121,10 @@
     "%@ requests additional data collection." : {
       "comment" : "Add-on name",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ requests additional data collection."
+            "value" : "%@请求收集更多数据。"
           }
         }
       }
@@ -126,10 +132,10 @@
     "%@ requests additional permissions." : {
       "comment" : "Add-on name",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ requests additional permissions."
+            "value" : "%@请求额外权限。"
           }
         }
       }
@@ -137,10 +143,10 @@
     "%@ Suggestions" : {
       "comment" : "Search provider name",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ Suggestions"
+            "value" : "%@个建议"
           }
         }
       }
@@ -150,8 +156,14 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "%1$@, and %2$@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ / %2$@"
           }
         }
       }
@@ -159,10 +171,10 @@
     "%@/sec" : {
       "comment" : "Download speed",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@/sec"
+            "value" : "%@/s"
           }
         }
       }
@@ -170,22 +182,10 @@
     "%d add-ons couldn’t be updated." : {
       "comment" : "Add-on count",
       "localizations" : {
-        "en" : {
-          "variations" : {
-            "plural" : {
-              "one" : {
-                "stringUnit" : {
-                  "state" : "translated",
-                  "value" : "%d add-on couldn’t be updated."
-                }
-              },
-              "other" : {
-                "stringUnit" : {
-                  "state" : "translated",
-                  "value" : "%d add-ons couldn’t be updated."
-                }
-              }
-            }
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$d个扩展无法更新"
           }
         }
       }
@@ -193,22 +193,10 @@
     "%d add-ons need permission to update." : {
       "comment" : "Add-on count",
       "localizations" : {
-        "en" : {
-          "variations" : {
-            "plural" : {
-              "one" : {
-                "stringUnit" : {
-                  "state" : "translated",
-                  "value" : "%d add-on need permission to update."
-                }
-              },
-              "other" : {
-                "stringUnit" : {
-                  "state" : "translated",
-                  "value" : "%d add-ons need permission to update."
-                }
-              }
-            }
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$d个扩展需要确认新的权限才能更新。"
           }
         }
       }
@@ -216,22 +204,10 @@
     "%d add-ons updated." : {
       "comment" : "Add-on count",
       "localizations" : {
-        "en" : {
-          "variations" : {
-            "plural" : {
-              "one" : {
-                "stringUnit" : {
-                  "state" : "translated",
-                  "value" : "%d add-on updated."
-                }
-              },
-              "other" : {
-                "stringUnit" : {
-                  "state" : "translated",
-                  "value" : "%d add-ons updated."
-                }
-              }
-            }
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已更新%1$d个扩展"
           }
         }
       }
@@ -239,22 +215,10 @@
     "%d domains" : {
       "comment" : "Domain count",
       "localizations" : {
-        "en" : {
-          "variations" : {
-            "plural" : {
-              "one" : {
-                "stringUnit" : {
-                  "state" : "translated",
-                  "value" : "%d domain"
-                }
-              },
-              "other" : {
-                "stringUnit" : {
-                  "state" : "translated",
-                  "value" : "%d domains"
-                }
-              }
-            }
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d个网站"
           }
         }
       }
@@ -262,82 +226,86 @@
     "%d Tabs" : {
       "comment" : "Tab count",
       "localizations" : {
-        "en" : {
-          "variations" : {
-            "plural" : {
-              "one" : {
-                "stringUnit" : {
-                  "state" : "translated",
-                  "value" : "%d Tab"
-                }
-              },
-              "other" : {
-                "stringUnit" : {
-                  "state" : "new",
-                  "value" : "%d Tabs"
-                }
-              }
-            }
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d个标签页"
           }
         }
       }
     },
     "▲ JIT-Less Mode is Currently Active" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "▲ JIT-Less Mode is Currently Active"
+            "value" : "▲ 免即时编译(JIT)模式已启动"
           }
         }
       }
     },
     "0 Tabs" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "0 Tabs"
+            "value" : "无标签页"
           }
         }
       }
     },
     "A Developer Disk Image download is already in progress." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "A Developer Disk Image download is already in progress."
+            "value" : "开发者磁盘映像正在下载"
           }
         }
       }
     },
     "A new version of Reynard Browser is available. Open Settings to update." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "A new version of Reynard Browser is available. Open Settings to update."
+            "value" : "Reynard浏览器有新版本可用。请打开设置进行更新。"
           }
         }
       }
     },
     "About" : {
       "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于"
+          }
+        }
+      }
+    },
+    "AboutDeveloperMessage" : {
+      "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "About"
+            "value" : "Hi, I'm Minh, the developer of Reynard. If you find the project useful, sponsoring me helps keep it alive and maintained. Thanks for the support!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您好,我是Reynard的开发者Minh。如果您觉得这个项目有用，您可以赞助我有助于保持该项目的活跃和维护。感谢您的支持！"
           }
         }
       }
     },
     "Access" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Access"
+            "value" : "访问"
           }
         }
       }
@@ -345,30 +313,30 @@
     "Access your data on websites in %@" : {
       "comment" : "Domain count text",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Access your data on websites in %@"
+            "value" : "访问您在%@中的网站数据"
           }
         }
       }
     },
     "Activate JIT-Less Mode" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Activate JIT-Less Mode"
+            "value" : "启用免即时编译(JIT)模式"
           }
         }
       }
     },
     "Add" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Add"
+            "value" : "添加"
           }
         }
       }
@@ -376,80 +344,80 @@
     "Add %@?" : {
       "comment" : "Add-on name",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Add %@?"
+            "value" : "添加%@?"
           }
         }
       }
     },
     "Add Add-on" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Add Add-on"
+            "value" : "添加扩展"
           }
         }
       }
     },
     "Add Bookmark" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Add Bookmark"
+            "value" : "添加书签"
           }
         }
       }
     },
     "Add Language" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Add Language"
+            "value" : "添加语言"
           }
         }
       }
     },
     "Add Language…" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Add Language…"
+            "value" : "添加语言..."
           }
         }
       }
     },
     "Add to Favorites" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Add to Favorites"
+            "value" : "添加到收藏夹"
           }
         }
       }
     },
     "Add Website" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Add Website"
+            "value" : "添加网站"
           }
         }
       }
     },
     "Add Website…" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Add Website…"
+            "value" : "添加网站…"
           }
         }
       }
@@ -457,30 +425,30 @@
     "Add websites with sign-in failures, human verification challenges, or other issues to use the %@ user agent." : {
       "comment" : "User agent name placeholder",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Add websites with sign-in failures, human verification challenges, or other issues to use the %@ user agent."
+            "value" : "若遇到登录失败、机器人验证或网站功能异常等问题的网站添加为使用 %@用户代理(UA)。"
           }
         }
       }
     },
     "Add-ons" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Add-ons"
+            "value" : "扩展"
           }
         }
       }
     },
     "Additional Options" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Additional Options"
+            "value" : "其他选项"
           }
         }
       }
@@ -488,80 +456,80 @@
     "Address" : {
       "comment" : "Sort option",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Address"
+            "value" : "网址"
           }
         }
       }
     },
     "Address Bar" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Address Bar"
+            "value" : "地址栏"
           }
         }
       }
     },
     "Admin Only" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Admin Only"
+            "value" : "仅限管理员"
           }
         }
       }
     },
     "Advanced" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Advanced"
+            "value" : "高级"
           }
         }
       }
     },
     "After you close a tab, Reynard won’t remember any of your browsing history or cookies. However, downloads and new bookmarks will be saved." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "After you close a tab, Reynard won’t remember any of your browsing history or cookies. However, downloads and new bookmarks will be saved."
+            "value" : "关闭标签页后，Reynard 不会记住您的任何浏览历史记录或 Cookie。下载内容和新添加的书签将被保存。"
           }
         }
       }
     },
     "All Downloads" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "All Downloads"
+            "value" : "全部下载"
           }
         }
       }
     },
     "All History" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "All History"
+            "value" : "所有历史记录"
           }
         }
       }
     },
     "All Websites" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "All Websites"
+            "value" : "所有网站"
           }
         }
       }
@@ -569,10 +537,10 @@
     "Allow" : {
       "comment" : "Permission option",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allow"
+            "value" : "允许"
           }
         }
       }
@@ -580,10 +548,10 @@
     "Allow %@ to access apps and services on devices connected to your local network?" : {
       "comment" : "Website host",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allow %@ to access apps and services on devices connected to your local network?"
+            "value" : "允许%@访问连接到您本地网络的设备上的应用和服务吗？"
           }
         }
       }
@@ -591,10 +559,10 @@
     "Allow %@ to access other apps and services on this device?" : {
       "comment" : "Website host",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allow %@ to access other apps and services on this device?"
+            "value" : "允许%@访问此设备上的其他应用和服务吗？"
           }
         }
       }
@@ -602,10 +570,10 @@
     "Allow %@ to play DRM-controlled content?" : {
       "comment" : "Website host",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allow %@ to play DRM-controlled content?"
+            "value" : "允许%@播放受DRM控制的内容吗？"
           }
         }
       }
@@ -613,10 +581,10 @@
     "Allow %@ to send notifications?" : {
       "comment" : "Website host",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allow %@ to send notifications?"
+            "value" : "允许%@发送通知？"
           }
         }
       }
@@ -624,10 +592,10 @@
     "Allow %@ to store data in persistent storage?" : {
       "comment" : "Website host",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allow %@ to store data in persistent storage?"
+            "value" : "允许%@将数据存储在当前设备中吗？"
           }
         }
       }
@@ -637,8 +605,14 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Allow %1$@ to use its cookies on %2$@?"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "允许%1$@在%2$@使用Cookies?"
           }
         }
       }
@@ -646,10 +620,10 @@
     "Allow %@ to use motion & orientation sensors?" : {
       "comment" : "Website host",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allow %@ to use motion & orientation sensors?"
+            "value" : "允许%@使用运动和方向传感器吗？"
           }
         }
       }
@@ -657,10 +631,10 @@
     "Allow %@ to use your camera and microphone?" : {
       "comment" : "Website host",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allow %@ to use your camera and microphone?"
+            "value" : "允许%@使用相机与麦克风？"
           }
         }
       }
@@ -668,10 +642,10 @@
     "Allow %@ to use your camera?" : {
       "comment" : "Website host",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allow %@ to use your camera?"
+            "value" : "允许%@使用相机？"
           }
         }
       }
@@ -679,10 +653,10 @@
     "Allow %@ to use your location?" : {
       "comment" : "Website host",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allow %@ to use your location?"
+            "value" : "允许%@使用定位信息？"
           }
         }
       }
@@ -690,10 +664,10 @@
     "Allow %@ to use your microphone?" : {
       "comment" : "Website host",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allow %@ to use your microphone?"
+            "value" : "允许%@使用麦克风？"
           }
         }
       }
@@ -701,40 +675,40 @@
     "Allow Audio and Video" : {
       "comment" : "Autoplay option",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allow Audio and Video"
+            "value" : "允许音频和视频"
           }
         }
       }
     },
     "Allow in Private Browsing" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allow in Private Browsing"
+            "value" : "允许在无痕浏览模式下使用"
           }
         }
       }
     },
     "Allow on All Websites" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allow on All Websites"
+            "value" : "允许在所有网站"
           }
         }
       }
     },
     "Allow this add-on to access every website." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allow this add-on to access every website."
+            "value" : "允许此扩展访问所有网站。"
           }
         }
       }
@@ -742,50 +716,50 @@
     "Allowed %@" : {
       "comment" : "Timestamp placeholder",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allowed %@"
+            "value" : "在%1$@允许"
           }
         }
       }
     },
     "Allowed Websites" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allowed Websites"
+            "value" : "允许的网站"
           }
         }
       }
     },
     "Appearance" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Appearance"
+            "value" : "外观"
           }
         }
       }
     },
     "Apps and Services" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Apps and Services"
+            "value" : "应用程序与服务"
           }
         }
       }
     },
     "Are you sure you want to upload all files? Only do this if you trust the site." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Are you sure you want to upload all files? Only do this if you trust the site."
+            "value" : "您确定要上传所有文件吗？只有在您信任该网站的情况下才这样做。"
           }
         }
       }
@@ -793,40 +767,40 @@
     "Ask" : {
       "comment" : "Permission option",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ask"
+            "value" : "询问"
           }
         }
       }
     },
     "Author" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Author"
+            "value" : "作者"
           }
         }
       }
     },
     "Autoplay" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Autoplay"
+            "value" : "自动播放"
           }
         }
       }
     },
     "Blank Page" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Blank Page"
+            "value" : "空白页面"
           }
         }
       }
@@ -834,10 +808,10 @@
     "Block Audio and Video" : {
       "comment" : "Autoplay option",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Block Audio and Video"
+            "value" : "拒绝音频和视频"
           }
         }
       }
@@ -845,40 +819,40 @@
     "Block Audio Only" : {
       "comment" : "Autoplay option",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Block Audio Only"
+            "value" : "仅拒绝音频"
           }
         }
       }
     },
     "Blocked" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Blocked"
+            "value" : "已屏蔽"
           }
         }
       }
     },
     "Bookmarks" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bookmarks"
+            "value" : "书签"
           }
         }
       }
     },
     "Bookmarks, History, and Tabs" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bookmarks, History, and Tabs"
+            "value" : "书签,历史记录和标签页"
           }
         }
       }
@@ -886,90 +860,100 @@
     "Bottom" : {
       "comment" : "Address bar position",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bottom"
+            "value" : "底部"
           }
         }
       }
     },
     "Browsing" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Browsing"
+            "value" : "浏览器"
           }
         }
       }
     },
     "Browsing History" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Browsing History"
+            "value" : "浏览历史"
+          }
+        }
+      }
+    },
+    "Buy Me a Coffee" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打赏一杯奶茶"
           }
         }
       }
     },
     "bytes" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "bytes"
+            "value" : "比特"
           }
         }
       }
     },
     "Cached Images and Files" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cached Images and Files"
+            "value" : "缓存的图片和文件"
           }
         }
       }
     },
     "Camera" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Camera"
+            "value" : "相机"
           }
         }
       }
     },
     "Cancel" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cancel"
+            "value" : "取消"
           }
         }
       }
     },
     "Cancel Download" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cancel Download"
+            "value" : "取消下载"
           }
         }
       }
     },
     "Cancel Download?" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cancel Download?"
+            "value" : "取消下载？"
           }
         }
       }
@@ -977,30 +961,30 @@
     "Changed %@" : {
       "comment" : "Timestamp placeholder",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Changed %@"
+            "value" : "在%1$@更改"
           }
         }
       }
     },
     "Choose File" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Choose File"
+            "value" : "选择文件"
           }
         }
       }
     },
     "Choose Folder" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Choose Folder"
+            "value" : "选择文件夹"
           }
         }
       }
@@ -1008,200 +992,200 @@
     "Clear" : {
       "comment" : "Destructive button\nSwipe action",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Clear"
+            "value" : "清除"
           }
         }
       }
     },
     "Clear All" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Clear All"
+            "value" : "全部清除"
           }
         }
       }
     },
     "Clear Browsing Data" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Clear Browsing Data"
+            "value" : "删除浏览数据"
           }
         }
       }
     },
     "Clear Downloads" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Clear Downloads"
+            "value" : "清除下载历史记录"
           }
         }
       }
     },
     "Clear History" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Clear History"
+            "value" : "清除历史记录"
           }
         }
       }
     },
     "Clear Timeframe" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Clear Timeframe"
+            "value" : "清除的时间范围"
           }
         }
       }
     },
     "Close All Tabs" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Close All Tabs"
+            "value" : "关闭全部标签页"
           }
         }
       }
     },
     "Compatibility" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Compatibility"
+            "value" : "兼容性"
           }
         }
       }
     },
     "Complete Add-on Updates" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Complete Add-on Updates"
+            "value" : "完成扩展更新"
           }
         }
       }
     },
     "Confirm Upload" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Confirm Upload"
+            "value" : "确认上传"
           }
         }
       }
     },
     "Cookies and Website Data" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cookies and Website Data"
+            "value" : "Cookies和网站数据"
           }
         }
       }
     },
     "Copy" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Copy"
+            "value" : "复制"
           }
         }
       }
     },
     "Copy Link" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Copy Link"
+            "value" : "复制链接"
           }
         }
       }
     },
     "Copy URL" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Copy URL"
+            "value" : "复制链接"
           }
         }
       }
     },
     "Corrupt File" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Corrupt File"
+            "value" : "文件损坏"
           }
         }
       }
     },
     "Could not retrieve the download URL." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Could not retrieve the download URL."
+            "value" : "无法获取下载链接。"
           }
         }
       }
     },
     "Couldn’t Clear Browsing Data" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Couldn’t Clear Browsing Data"
+            "value" : "无法删除浏览数据"
           }
         }
       }
     },
     "Couldn’t Clear History" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Couldn’t Clear History"
+            "value" : "无法删除浏览历史记录"
           }
         }
       }
     },
     "Couldn’t Disable Add-on" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Couldn’t Disable Add-on"
+            "value" : "无法禁用扩展"
           }
         }
       }
     },
     "Couldn’t Enable Add-on" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Couldn’t Enable Add-on"
+            "value" : "无法启用扩展"
           }
         }
       }
@@ -1209,90 +1193,90 @@
     "Couldn’t install %@." : {
       "comment" : "Add-on name",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Couldn’t install %@."
+            "value" : "无法安装%@"
           }
         }
       }
     },
     "Couldn’t install this add-on." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Couldn’t install this add-on."
+            "value" : "无法安装此扩展"
           }
         }
       }
     },
     "Couldn’t Reload Add-on" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Couldn’t Reload Add-on"
+            "value" : "无法重新加载扩展"
           }
         }
       }
     },
     "Couldn’t Remove Add-on" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Couldn’t Remove Add-on"
+            "value" : "无法移除扩展"
           }
         }
       }
     },
     "Couldn’t Update Permissions" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Couldn’t Update Permissions"
+            "value" : "无法更新权限"
           }
         }
       }
     },
     "Couldn’t Update Private Browsing Access" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Couldn’t Update Private Browsing Access"
+            "value" : "无法更新无痕浏览下的权限"
           }
         }
       }
     },
     "Cross-Site Cookies" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cross-Site Cookies"
+            "value" : "跨站点(域)Cookies"
           }
         }
       }
     },
     "Custom Search URL" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Custom Search URL"
+            "value" : "自定义搜索URL"
           }
         }
       }
     },
     "Custom URL" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Custom URL"
+            "value" : "自定义URL"
           }
         }
       }
@@ -1300,10 +1284,10 @@
     "Date Added" : {
       "comment" : "Sort option",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Date Added"
+            "value" : "添加日期"
           }
         }
       }
@@ -1311,60 +1295,60 @@
     "Day" : {
       "comment" : "Light appearance option",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Day"
+            "value" : "浅色"
           }
         }
       }
     },
     "Default Setting" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Default Setting"
+            "value" : "默认设置"
           }
         }
       }
     },
     "Delete" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Delete"
+            "value" : "删除"
           }
         }
       }
     },
     "Delete Bookmark" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Delete Bookmark"
+            "value" : "删除书签"
           }
         }
       }
     },
     "Delete Folder" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Delete Folder"
+            "value" : "删除文件夹"
           }
         }
       }
     },
     "Deleted" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Deleted"
+            "value" : "已删除"
           }
         }
       }
@@ -1372,20 +1356,20 @@
     "Denied %@" : {
       "comment" : "Timestamp placeholder",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Denied %@"
+            "value" : "在%1$@拒绝"
           }
         }
       }
     },
     "Denied Websites" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Denied Websites"
+            "value" : "拒绝的网站"
           }
         }
       }
@@ -1393,70 +1377,70 @@
     "Deny" : {
       "comment" : "Permission option",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Deny"
+            "value" : "拒绝"
           }
         }
       }
     },
     "Desktop Firefox" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Desktop Firefox"
+            "value" : "桌面版Firefox"
           }
         }
       }
     },
     "Details" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Details"
+            "value" : "详情"
           }
         }
       }
     },
     "Developer Disk Image download was cancelled." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Developer Disk Image download was cancelled."
+            "value" : "开发者磁盘映像下载已取消。"
           }
         }
       }
     },
     "Developer Disk Image source URL is invalid." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Developer Disk Image source URL is invalid."
+            "value" : "开发者磁盘映像源URL无效。"
           }
         }
       }
     },
     "Device Apps and Services" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Device Apps and Services"
+            "value" : "设备中的应用与服务"
           }
         }
       }
     },
     "Discover Add-ons…" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Discover Add-ons…"
+            "value" : "获取更多扩展"
           }
         }
       }
@@ -1464,10 +1448,10 @@
     "Do you want to download \"%@\"?" : {
       "comment" : "File name",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Do you want to download \"%@\"?"
+            "value" : "下载%@?"
           }
         }
       }
@@ -1475,170 +1459,170 @@
     "Do you want to stop downloading %@?" : {
       "comment" : "File name",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Do you want to stop downloading %@?"
+            "value" : "取消下载%@?"
           }
         }
       }
     },
     "Don’t Allow" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Don’t Allow"
+            "value" : "不允许"
           }
         }
       }
     },
     "Download" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Download"
+            "value" : "下载"
           }
         }
       }
     },
     "Download Failed" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Download Failed"
+            "value" : "下载失败"
           }
         }
       }
     },
     "Download Reynard (.tipa)" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Download Reynard (.tipa)"
+            "value" : "下载Reynard (.tipa)"
           }
         }
       }
     },
     "Downloading" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Downloading"
+            "value" : "下载"
           }
         }
       }
     },
     "Downloading Update" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Downloading Update"
+            "value" : "正在下载更新..."
           }
         }
       }
     },
     "Downloads" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Downloads"
+            "value" : "下载"
           }
         }
       }
     },
     "e.g. youtube.com" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "e.g. youtube.com"
+            "value" : "例如：github.com"
           }
         }
       }
     },
     "Edit" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Edit"
+            "value" : "编辑"
           }
         }
       }
     },
     "Edit Bookmark" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Edit Bookmark"
+            "value" : "编辑书签"
           }
         }
       }
     },
     "Edit Bookmarks" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Edit Bookmarks"
+            "value" : "编辑书签"
           }
         }
       }
     },
     "Enable Add-on" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Enable Add-on"
+            "value" : "启用扩展"
           }
         }
       }
     },
     "Enable JIT" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Enable JIT"
+            "value" : "启用即时编译(JIT)"
           }
         }
       }
     },
     "Enable JIT to improve performance and ensure websites work properly." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Enable JIT to improve performance and ensure websites work properly."
+            "value" : "启用即时编译(JIT)以提高运行性能并确保网站正常运行"
           }
         }
       }
     },
     "Engine Version" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Engine Version"
+            "value" : "浏览器引擎版本"
           }
         }
       }
     },
     "Error" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Error"
+            "value" : "错误"
           }
         }
       }
@@ -1648,208 +1632,204 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Error %1$d: %2$@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "错误 %1$d: %2$@"
           }
         }
       }
     },
     "Failed to enable JIT" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Failed to enable JIT"
+            "value" : "无法启用即时编译(JIT)"
           }
         }
       }
     },
     "Favorites" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Favorites"
+            "value" : "个人收藏"
           }
         }
       }
     },
     "Files you download appear here" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Files you download appear here"
+            "value" : "无下载的文件\n您下载的文件将显示在此处"
           }
         }
       }
     },
     "Firefox for Android" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Firefox for Android"
+            "value" : "Android版本的Firefox"
           }
         }
       }
     },
     "Folders" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Folders"
+            "value" : "文件夹"
           }
         }
       }
     },
     "Frequently Visited" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Frequently Visited"
+            "value" : "经常访问的网站"
           }
         }
       }
     },
     "General" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "General"
-          }
-        }
-      }
-    },
-    "GitHub - @minh-ton" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "GitHub - @minh-ton"
+            "value" : "通用"
           }
         }
       }
     },
     "History" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "History"
+            "value" : "历史"
           }
         }
       }
     },
     "Homepage" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Homepage"
+            "value" : "主页"
           }
         }
       }
     },
     "Homepage Sections" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Homepage Sections"
+            "value" : "在首页中显示的内容"
           }
         }
       }
     },
     "Import Failed" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Import Failed"
+            "value" : "导入失败"
           }
         }
       }
     },
     "Import Pairing File…" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Import Pairing File…"
+            "value" : "导入配对文件..."
           }
         }
       }
     },
     "Incompatible" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Incompatible"
+            "value" : "不兼容"
           }
         }
       }
     },
     "Information" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Information"
+            "value" : "信息"
           }
         }
       }
     },
     "Install Add-on from File…" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Install Add-on from File…"
+            "value" : "从文件中安装扩展"
           }
         }
       }
     },
     "Install the TrollStore version of Reynard to enable JIT automatically for improved performance and to ensure websites work properly." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Install the TrollStore version of Reynard to enable JIT automatically for improved performance and to ensure websites work properly."
+            "value" : "安装 TrollStore 版本的 Reynard，即可自动启用即时编译(JIT)，从而提高性能并确保网站正常运行。"
           }
         }
       }
     },
     "Install TrollStore" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Install TrollStore"
+            "value" : "安装TrollStore"
           }
         }
       }
     },
     "Installed Add-ons" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Installed Add-ons"
+            "value" : "已安装扩展"
           }
         }
       }
     },
     "Installing Add-on…" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Installing Add-on…"
+            "value" : "正在安装扩展"
           }
         }
       }
@@ -1857,50 +1837,50 @@
     "It's extremely rare that you encounter this issue! Make sure that your TrollStore installation or jailbroken environment is properly configured.\n\nYou may use the browser without JIT temporarily until the next launch by activating JIT-Less Mode." : {
       "comment" : "Paragraph break intentional",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "It's extremely rare that you encounter this issue! Make sure that your TrollStore installation or jailbroken environment is properly configured.\n\nYou may use the browser without JIT temporarily until the next launch by activating JIT-Less Mode."
+            "value" : "这种情况极其罕见！请确保您的TrollStore安装或越狱环境配置正确。\n\n您可以通过启用无即时编译(JIT)模式暂时使用浏览器，直到下次启动浏览器。"
           }
         }
       }
     },
     "JIT" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "JIT"
+            "value" : "JIT(即时编译)"
           }
         }
       }
     },
     "JIT is not supported on the OS version you are using." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "JIT is not supported on the OS version you are using."
+            "value" : "即时编译(JIT)不支持您当前的系统版本"
           }
         }
       }
     },
     "Keep Downloading" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Keep Downloading"
+            "value" : "继续下载"
           }
         }
       }
     },
     "Languages" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Languages"
+            "value" : "语言"
           }
         }
       }
@@ -1908,140 +1888,140 @@
     "Last checked %@." : {
       "comment" : "Date placeholder",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Last checked %@."
+            "value" : "最近检查更新: %@"
           }
         }
       }
     },
     "Last Hour" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Last Hour"
+            "value" : "过去一小时"
           }
         }
       }
     },
     "Last Tab" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Last Tab"
+            "value" : "恢复上次标签页"
           }
         }
       }
     },
     "Last Updated" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Last Updated"
+            "value" : "更新日期"
           }
         }
       }
     },
     "Learn More" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Learn More"
+            "value" : "查看详情"
           }
         }
       }
     },
     "Links" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Links"
+            "value" : "链接"
           }
         }
       }
     },
     "Loading Add-ons…" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Loading Add-ons…"
+            "value" : "正在加载扩展"
           }
         }
       }
     },
     "Local Network" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Local Network"
+            "value" : "本地网络"
           }
         }
       }
     },
     "Local Network Devices" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Local Network Devices"
+            "value" : "本地网络中的设备"
           }
         }
       }
     },
     "Location" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Location"
+            "value" : "位置"
           }
         }
       }
     },
     "Make sure TrollStore's URL Scheme is enabled." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Make sure TrollStore's URL Scheme is enabled."
+            "value" : "请确保已启用TrollStore的URL Scheme"
           }
         }
       }
     },
     "Media" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Media"
+            "value" : "媒体"
           }
         }
       }
     },
     "Microphone" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Microphone"
+            "value" : "麦克风"
           }
         }
       }
     },
     "More About This Add-on" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "More About This Add-on"
+            "value" : "关于此扩展"
           }
         }
       }
@@ -2049,40 +2029,40 @@
     "Name" : {
       "comment" : "Sort option",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Name"
+            "value" : "名称"
           }
         }
       }
     },
     "Needs Permission to Update" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Needs Permission to Update"
+            "value" : "需要确认权限后继续更新"
           }
         }
       }
     },
     "Network Error" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Network Error"
+            "value" : "网络错误"
           }
         }
       }
     },
     "New Folder" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "New Folder"
+            "value" : "新建文件夹"
           }
         }
       }
@@ -2090,10 +2070,10 @@
     "New required data collection: The developer says this add-on will collect %@." : {
       "comment" : "Data collection list",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "New required data collection: The developer says this add-on will collect %@."
+            "value" : "新增所需数据收集\n开发者表示该扩展程序将收集%1$@。"
           }
         }
       }
@@ -2101,20 +2081,20 @@
     "New required permissions: %@" : {
       "comment" : "Permission list",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "New required permissions: %@"
+            "value" : "需要新权限: %1$@"
           }
         }
       }
     },
     "New Tab" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "New Tab"
+            "value" : "新标签页"
           }
         }
       }
@@ -2122,100 +2102,100 @@
     "Night" : {
       "comment" : "Dark appearance option",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Night"
+            "value" : "深色"
           }
         }
       }
     },
     "No" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "No"
+            "value" : "否"
           }
         }
       }
     },
     "No Add-ons" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "No Add-ons"
+            "value" : "无扩展"
           }
         }
       }
     },
     "No Add-ons Installed" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "No Add-ons Installed"
+            "value" : "未安装任何扩展"
           }
         }
       }
     },
     "No matching bookmarks" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "No matching bookmarks"
+            "value" : "未找到书签"
           }
         }
       }
     },
     "No matching downloads" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "No matching downloads"
+            "value" : "未找到下载项"
           }
         }
       }
     },
     "No matching history" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "No matching history"
+            "value" : "未找到历史记录"
           }
         }
       }
     },
     "No release notes available." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "No release notes available."
+            "value" : "无更新日志"
           }
         }
       }
     },
     "No Update Available" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "No Update Available"
+            "value" : "无可用更新"
           }
         }
       }
     },
     "No updates found." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "No updates found."
+            "value" : "所有扩展为最新版本"
           }
         }
       }
@@ -2223,60 +2203,70 @@
     "None" : {
       "comment" : "Sort option",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "None"
+            "value" : "无"
           }
         }
       }
     },
     "Not Allowed in Private Browsing" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Not Allowed in Private Browsing"
+            "value" : "不允许在无痕浏览中"
+          }
+        }
+      }
+    },
+    "Not Now" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "稍后"
           }
         }
       }
     },
     "Not Verified" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Not Verified"
+            "value" : "未验证"
           }
         }
       }
     },
     "Number of Rows" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Number of Rows"
+            "value" : "最大存储行数"
           }
         }
       }
     },
     "Number of Tabs" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Number of Tabs"
+            "value" : "最多存储标签页数量"
           }
         }
       }
     },
     "Number of Websites" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Number of Websites"
+            "value" : "最多存储网站数量"
           }
         }
       }
@@ -2284,20 +2274,20 @@
     "Off" : {
       "comment" : "Disabled state",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Off"
+            "value" : "关闭"
           }
         }
       }
     },
     "OK" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "OK"
+            "value" : "好"
           }
         }
       }
@@ -2305,20 +2295,20 @@
     "On" : {
       "comment" : "Enabled state",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "On"
+            "value" : "开启"
           }
         }
       }
     },
     "On Startup" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "On Startup"
+            "value" : "启动时"
           }
         }
       }
@@ -2326,150 +2316,150 @@
     "Open in\nFiles" : {
       "comment" : "Line break intentional",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Open in\nFiles"
+            "value" : "在文件App中打开"
           }
         }
       }
     },
     "Open in New Private Tab" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Open in New Private Tab"
+            "value" : "在隐私页面中打开"
           }
         }
       }
     },
     "Open in New Tab" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Open in New Tab"
+            "value" : "在新页面中打开"
           }
         }
       }
     },
     "Open New Tabs To" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Open New Tabs To"
+            "value" : "起始页面"
           }
         }
       }
     },
     "Open Settings" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Open Settings"
+            "value" : "打开设置"
           }
         }
       }
     },
     "Open Tabs" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Open Tabs"
+            "value" : "打开的标签页"
           }
         }
       }
     },
     "Option" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Option"
+            "value" : "选项"
           }
         }
       }
     },
     "Optional Data Collection" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Optional Data Collection"
+            "value" : "选择数据收集的范围"
           }
         }
       }
     },
     "Optional Permissions" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Optional Permissions"
+            "value" : "选择权限"
           }
         }
       }
     },
     "Page Zoom" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Page Zoom"
+            "value" : "网页缩放"
           }
         }
       }
     },
     "Page Zoom on" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Page Zoom on"
+            "value" : "网页缩放"
           }
         }
       }
     },
     "Performance Recommendation" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Performance Recommendation"
+            "value" : "性能建议"
           }
         }
       }
     },
     "Permissions" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Permissions"
+            "value" : "权限"
           }
         }
       }
     },
     "Persistent Storage" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Persistent Storage"
+            "value" : "持久化存储"
           }
         }
       }
     },
     "Photo Library" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Photo Library"
+            "value" : "照片图库"
           }
         }
       }
@@ -2477,110 +2467,110 @@
     "Please check that your pairing file is valid, your loopback VPN is on, and you're connected to a stable Wi-Fi network.\n\nYou may use the browser without JIT temporarily until the next launch by activating JIT-Less Mode." : {
       "comment" : "Paragraph break intentional",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Please check that your pairing file is valid, your loopback VPN is on, and you're connected to a stable Wi-Fi network.\n\nYou may use the browser without JIT temporarily until the next launch by activating JIT-Less Mode."
+            "value" : "请检查您的配对文件是否有效、回环VPN是否已开启，以及您是否已连接到稳定的 Wi-Fi 网络。\n\n您可以通过启用免即时编译(JIT)模式暂时使用浏览器，直到下次启动浏览器。"
           }
         }
       }
     },
     "Preparing JIT" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Preparing JIT"
+            "value" : "准备即时编译(JIT)"
           }
         }
       }
     },
     "Previous 7 Days" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Previous 7 Days"
+            "value" : "7天前"
           }
         }
       }
     },
     "Previous 30 Days" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Previous 30 Days"
+            "value" : "30天前"
           }
         }
       }
     },
     "Privacy" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Privacy"
+            "value" : "隐私"
           }
         }
       }
     },
     "Private" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Private"
+            "value" : "无痕浏览"
           }
         }
       }
     },
     "Private Browsing" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Private Browsing"
+            "value" : "无痕浏览"
           }
         }
       }
     },
     "Quit Reynard" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Quit Reynard"
+            "value" : "退出Reynard浏览器"
           }
         }
       }
     },
     "Rating" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Rating"
+            "value" : "评分"
           }
         }
       }
     },
     "Recently Closed Tabs" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Recently Closed Tabs"
+            "value" : "历史记录"
           }
         }
       }
     },
     "Remove" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Remove"
+            "value" : "移除"
           }
         }
       }
@@ -2588,100 +2578,100 @@
     "Remove %@?" : {
       "comment" : "Add-on name",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Remove %@?"
+            "value" : "删除%@?"
           }
         }
       }
     },
     "Remove Add-on" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Remove Add-on"
+            "value" : "删除扩展"
           }
         }
       }
     },
     "Remove Link" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Remove Link"
+            "value" : "删除链接"
           }
         }
       }
     },
     "Remove Recently Closed Tab" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Remove Recently Closed Tab"
+            "value" : "移除最近关闭的标签页"
           }
         }
       }
     },
     "Request Desktop Website" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Request Desktop Website"
+            "value" : "请求桌面网站"
           }
         }
       }
     },
     "Request Desktop Website On" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Request Desktop Website On"
+            "value" : "允许这些请求桌面网站"
           }
         }
       }
     },
     "Request Mobile Website" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Request Mobile Website"
+            "value" : "请求移动网站"
           }
         }
       }
     },
     "Required Data Collection" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Required Data Collection"
+            "value" : "所需数据收集"
           }
         }
       }
     },
     "Required DDI files are missing." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Required DDI files are missing."
+            "value" : "缺少必需的DDI文件。"
           }
         }
       }
     },
     "Required Permissions" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Required Permissions"
+            "value" : "需要的权限"
           }
         }
       }
@@ -2689,230 +2679,240 @@
     "Reset" : {
       "comment" : "Destructive button",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Reset"
+            "value" : "重置"
           }
         }
       }
     },
     "Reset Page Zoom Settings" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Reset Page Zoom Settings"
+            "value" : "重置网页缩放设置"
           }
         }
       }
     },
     "Reset Permissions for All Websites" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Reset Permissions for All Websites"
+            "value" : "重置所有网站的权限"
           }
         }
       }
     },
     "Reset Settings for This Website" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Reset Settings for This Website"
+            "value" : "重置当前网站的设置"
           }
         }
       }
     },
     "Restart Required" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Restart Required"
+            "value" : "需要重新启动"
           }
         }
       }
     },
     "Restricted" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Restricted"
+            "value" : "受限"
           }
         }
       }
     },
     "Reynard Browser" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Reynard Browser"
+            "value" : "Reynard浏览器"
           }
         }
       }
     },
     "Reynard won’t remember any of your browsing history or cookies. However, downloads and new bookmarks will be saved." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Reynard won’t remember any of your browsing history or cookies. However, downloads and new bookmarks will be saved."
+            "value" : "闭标签页后，Reynard 不会记住您的任何浏览历史记录或 Cookies。下载内容和新添加的书签将被保存。"
           }
         }
       }
     },
     "Save" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Save"
+            "value" : "保存"
           }
         }
       }
     },
     "Save to Photos" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Save to Photos"
+            "value" : "保存到照片"
           }
         }
       }
     },
     "Search" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Search"
+            "value" : "搜索"
           }
         }
       }
     },
     "Search Bookmarks" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Search Bookmarks"
+            "value" : "搜索书签"
           }
         }
       }
     },
     "Search Browsing History" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Search Browsing History"
+            "value" : "搜索历史记录"
           }
         }
       }
     },
     "Search Downloads" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Search Downloads"
+            "value" : "搜索下载项"
           }
         }
       }
     },
     "Search Engine" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Search Engine"
+            "value" : "搜索引擎"
           }
         }
       }
     },
     "Search History" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Search History"
+            "value" : "搜索历史"
           }
         }
       }
     },
     "Search Languages" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Search Languages"
+            "value" : "搜索语言"
           }
         }
       }
     },
     "Search Opened Tabs" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Search Opened Tabs"
+            "value" : "搜索已经打开的标签页"
           }
         }
       }
     },
     "Search or enter address" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Search or enter address"
+            "value" : "搜索或输入网址"
           }
         }
       }
     },
     "Search Suggestion Provider" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Search Suggestion Provider"
+            "value" : "搜索建议提供商"
           }
         }
       }
     },
     "Search Suggestions" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Search Suggestions"
+            "value" : "搜索引擎建议"
           }
         }
       }
     },
     "Select Option" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Select Option"
+            "value" : "选择选项"
+          }
+        }
+      }
+    },
+    "Select Options" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择选项"
           }
         }
       }
     },
     "Settings" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Settings"
+            "value" : "设置"
           }
         }
       }
@@ -2920,210 +2920,210 @@
     "Settings for %@" : {
       "comment" : "Website host",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Settings for %@"
+            "value" : "%@的设置"
           }
         }
       }
     },
     "Share" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Share"
+            "value" : "分享"
           }
         }
       }
     },
     "Share Image" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Share Image"
+            "value" : "分享图片"
           }
         }
       }
     },
     "Share Link" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Share Link"
+            "value" : "分享链接"
           }
         }
       }
     },
     "Show All" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Show All"
+            "value" : "全选"
           }
         }
       }
     },
     "Show All Websites" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Show All Websites"
+            "value" : "显示所有网站"
           }
         }
       }
     },
     "Show Favorites" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Show Favorites"
+            "value" : "显示个人收藏"
           }
         }
       }
     },
     "Show Folders on Top" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Show Folders on Top"
+            "value" : "置顶显示文件夹"
           }
         }
       }
     },
     "Show Frequently Visited" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Show Frequently Visited"
+            "value" : "显示最近访问"
           }
         }
       }
     },
     "Show Full Website Address" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Show Full Website Address"
+            "value" : "显示完整网址"
           }
         }
       }
     },
     "Show Image Previews" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Show Image Previews"
+            "value" : "显示图片预览"
           }
         }
       }
     },
     "Show in Private Browsing" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Show in Private Browsing"
+            "value" : "无痕浏览中显示"
           }
         }
       }
     },
     "Show Less" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Show Less"
+            "value" : "选择更少"
           }
         }
       }
     },
     "Show Link Previews" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Show Link Previews"
+            "value" : "显示链接预览"
           }
         }
       }
     },
     "Show Recently Closed Tabs" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Show Recently Closed Tabs"
+            "value" : "显示最近关闭的标签页"
           }
         }
       }
     },
     "Show Search Suggestions" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Show Search Suggestions"
+            "value" : "显示搜索建议"
           }
         }
       }
     },
     "Show Tab Bar in Landscape" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Show Tab Bar in Landscape"
+            "value" : "在横屏时显示工具栏"
           }
         }
       }
     },
     "Since this is your first time enabling JIT, Reynard needs to download and mount the Developer Disk Image. This is required for JIT to work properly." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Since this is your first time enabling JIT, Reynard needs to download and mount the Developer Disk Image. This is required for JIT to work properly."
+            "value" : "由于这是您首次开启即时编译(JIT)模式，Reynard需要下载并挂载开发者磁盘映像。这是即时编译(JIT)模式正常工作的必要条件。"
           }
         }
       }
     },
     "Some websites are available in multiple languages. Choose languages in the order you prefer." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Some websites are available in multiple languages. Choose languages in the order you prefer."
+            "value" : "部分网站提供多种语言版本。请选择您的语言偏好并进行排序"
           }
         }
       }
     },
     "Sort By" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sort By"
+            "value" : "排序"
           }
         }
       }
     },
     "Support The Project" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Support The Project"
+            "value" : "支持本项目"
           }
         }
       }
@@ -3131,137 +3131,26 @@
     "System" : {
       "comment" : "Appearance option",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "System"
+            "value" : "跟随系统"
           }
         }
       }
     },
     "Tabs" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tabs"
+            "value" : "标签页"
           }
         }
       }
     },
-    "Take Photo" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Take Photo"
-          }
-        }
-      }
-    },
-    "Take Photo or Video" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Take Photo or Video"
-          }
-        }
-      }
-    },
-    "Take Video" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Take Video"
-          }
-        }
-      }
-    },
-    "The app will now close for the JIT setting to take effect." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The app will now close for the JIT setting to take effect."
-          }
-        }
-      }
-    },
-    "The required Developer Disk Image files for enabling JIT were not found.\n\nJIT has been disabled. Quit the app using the button below, then re-enable JIT from the browser settings." : {
-      "comment" : "Paragraph break intentional",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The required Developer Disk Image files for enabling JIT were not found.\n\nJIT has been disabled. Quit the app using the button below, then re-enable JIT from the browser settings."
-          }
-        }
-      }
-    },
-    "This add-on" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This add-on"
-          }
-        }
-      }
-    },
-    "This add-on couldn’t be updated." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This add-on couldn’t be updated."
-          }
-        }
-      }
-    },
-    "This add-on doesn’t require any permissions." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This add-on doesn’t require any permissions."
-          }
-        }
-      }
-    },
-    "This add-on isn’t supported by this version of Reynard and has been disabled." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This add-on isn’t supported by this version of Reynard and has been disabled."
-          }
-        }
-      }
-    },
-    "This build does not support in-app updates. Visit the project's Releases page to download the latest version of the app." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This build does not support in-app updates. Visit the project's Releases page to download the latest version of the app."
-          }
-        }
-      }
-    },
-    "This will clear selected browsing data. This action cannot be undone." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This will clear selected browsing data. This action cannot be undone."
-          }
-        }
-      }
-    },
-    "This will close your %d tabs." : {
-      "comment" : "Tab count",
+    "TabsCount" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "variations" : {
@@ -3269,13 +3158,25 @@
               "one" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "This will close your %d tab."
+                  "value" : "%1$d tab"
                 }
               },
               "other" : {
                 "stringUnit" : {
-                  "state" : "new",
-                  "value" : "This will close your %d tabs."
+                  "state" : "translated",
+                  "value" : "%1$d tabs"
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans" : {
+          "variations" : {
+            "plural" : {
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%1$d个标签页"
                 }
               }
             }
@@ -3283,52 +3184,174 @@
         }
       }
     },
-    "This will reset permissions for all websites. This action cannot be undone." : {
+    "Take Photo" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "This will reset permissions for all websites. This action cannot be undone."
+            "value" : "拍照"
+          }
+        }
+      }
+    },
+    "Take Photo or Video" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "拍照或拍视频"
+          }
+        }
+      }
+    },
+    "Take Video" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "拍摄视频"
+          }
+        }
+      }
+    },
+    "The app will now close for the JIT setting to take effect." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "应用程序即将重新启动以开启即时编译(JIT)模式"
+          }
+        }
+      }
+    },
+    "The required Developer Disk Image files for enabling JIT were not found.\n\nJIT has been disabled. Quit the app using the button below, then re-enable JIT from the browser settings." : {
+      "comment" : "Paragraph break intentional",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未找到启用即时编译(JIT)所需的开发者磁盘映像文件。\n\n即时编译(JIT)已被禁用。请使用下方按钮退出应用，然后从浏览器设置中重新启用即时编译(JIT)。"
+          }
+        }
+      }
+    },
+    "This add-on" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此扩展"
+          }
+        }
+      }
+    },
+    "This add-on couldn’t be updated." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法更新此扩展"
+          }
+        }
+      }
+    },
+    "This add-on doesn’t require any permissions." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此扩展不需要任何权限"
+          }
+        }
+      }
+    },
+    "This add-on isn’t supported by this version of Reynard and has been disabled." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此扩展程序不受此版本Reynard浏览器支持，已被禁用。"
+          }
+        }
+      }
+    },
+    "This build does not support in-app updates. Visit the project's Releases page to download the latest version of the app." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此版本不支持应用内更新。请访问项目GitHub的“发布”页面下载最新版本的应用。"
+          }
+        }
+      }
+    },
+    "This will clear selected browsing data. This action cannot be undone." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此操作将删除您的所有浏览数据并且无法撤销"
+          }
+        }
+      }
+    },
+    "This will close your %d tabs." : {
+      "comment" : "Tab count",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将关闭%d个标签页"
+          }
+        }
+      }
+    },
+    "This will reset permissions for all websites. This action cannot be undone." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此操作将重置所有网站的权限并且无法撤销"
           }
         }
       }
     },
     "This will reset settings for this website. This action cannot be undone." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "This will reset settings for this website. This action cannot be undone."
+            "value" : "此操作将重置全部网站设置并且无法撤销"
           }
         }
       }
     },
     "Title" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Title"
+            "value" : "标题"
           }
         }
       }
     },
     "Today" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Today"
+            "value" : "今天"
           }
         }
       }
     },
     "Today and Yesterday" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Today and Yesterday"
+            "value" : "今天和昨天"
           }
         }
       }
@@ -3336,201 +3359,210 @@
     "Top" : {
       "comment" : "Address bar position",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Top"
+            "value" : "顶部"
           }
         }
       }
     },
     "Unable to access the app Application Support directory." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Unable to access the app Application Support directory."
+            "value" : "无法访问应用程序支持目录。"
+          }
+        }
+      }
+    },
+    "Unknown" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未知"
           }
         }
       }
     },
     "Unknown error." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Unknown error."
+            "value" : "未知错误"
           }
         }
       }
     },
     "Unknown size" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Unknown size"
+            "value" : "未知大小"
           }
         }
       }
     },
     "Unsupported" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Unsupported"
+            "value" : "不支持"
           }
         }
       }
     },
     "Unsupported Add-ons" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Unsupported Add-ons"
+            "value" : "不支持的扩展"
           }
         }
       }
     },
     "Untitled" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Untitled"
+            "value" : "未命名"
           }
         }
       }
     },
     "Update Add-on Permissions" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Update Add-on Permissions"
+            "value" : "更新扩展权限"
           }
         }
       }
     },
     "Update All Add-ons" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Update All Add-ons"
+            "value" : "更新全部扩展"
           }
         }
       }
     },
     "Update Available" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Update Available"
+            "value" : "新版本已发布"
           }
         }
       }
     },
     "Update Failed" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Update Failed"
+            "value" : "更新失败"
           }
         }
       }
     },
     "Update Now" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Update Now"
+            "value" : "立即更新"
           }
         }
       }
     },
     "Update Unavailable" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Update Unavailable"
+            "value" : "更新不可用"
           }
         }
       }
     },
     "Updated" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Updated"
+            "value" : "已更新"
           }
         }
       }
     },
     "Updating Add-ons…" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Updating Add-ons…"
+            "value" : "正在更新扩展…"
           }
         }
       }
     },
     "Updating…" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Updating…"
+            "value" : "正在更新…"
           }
         }
       }
     },
     "Upload" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Upload"
+            "value" : "上传"
           }
         }
       }
     },
     "URL" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "URL"
-          }
-        }
-      }
+      "shouldTranslate" : false
     },
     "Use %s for search terms, as in example.com⁠/⁠search⁠?⁠q⁠=⁠%s." : {
       "comment" : "Literal %s, word joiners",
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Use %1$s for search terms, as in example.com⁠/⁠search⁠?⁠q⁠=⁠%2$s."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用%%s作为搜索词，例如 example.com⁠/⁠search⁠?⁠q⁠=⁠%%s。"
           }
         }
       }
     },
     "Use Compatibility User Agent" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Use Compatibility User Agent"
+            "value" : "使用兼容的用户代理(UA)"
           }
         }
       }
@@ -3538,30 +3570,30 @@
     "Use the %@ user agent for all websites to improve compatibility." : {
       "comment" : "User agent name placeholder",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Use the %@ user agent for all websites to improve compatibility."
+            "value" : "为了提高兼容性，请在所有网站上使用%@用户代理(UA)。"
           }
         }
       }
     },
     "User Agent Overrides" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "User Agent Overrides"
+            "value" : "用户代理(UA)覆写"
           }
         }
       }
     },
     "Version" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Version"
+            "value" : "版本"
           }
         }
       }
@@ -3569,100 +3601,100 @@
     "Version %@" : {
       "comment" : "Version number",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Version %@"
+            "value" : "版本 %@"
           }
         }
       }
     },
     "View Source Code" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "View Source Code"
+            "value" : "查看源代码"
           }
         }
       }
     },
     "Website Language" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Website Language"
+            "value" : "网站语言"
           }
         }
       }
     },
     "Website Permissions" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Website Permissions"
+            "value" : "网站权限"
           }
         }
       }
     },
     "Website Settings" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Website Settings"
+            "value" : "网站设置"
           }
         }
       }
     },
     "Websites" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Websites"
+            "value" : "网站"
           }
         }
       }
     },
     "Websites With Custom Settings" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Websites With Custom Settings"
+            "value" : "自定义设置的网站"
           }
         }
       }
     },
     "When the download finishes, choose the app that you used to sideload Reynard in the share sheet to install the update." : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "When the download finishes, choose the app that you used to sideload Reynard in the share sheet to install the update."
+            "value" : "下载完成后，在分享菜单中选择你用来侧载(签名安装)Reynard浏览器的应用来安装更新。"
           }
         }
       }
     },
     "Yes" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Yes"
+            "value" : "是"
           }
         }
       }
     },
     "Yesterday" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Yesterday"
+            "value" : "昨天"
           }
         }
       }
@@ -3670,30 +3702,30 @@
     "You may want to block access if it’s not clear why %@ needs this data." : {
       "comment" : "Third-party host",
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "You may want to block access if it’s not clear why %@ needs this data."
+            "value" : "如果不清楚 %@ 为什么需要这些数据，您可能需要阻止访问。"
           }
         }
       }
     },
     "Your browsing history appears here" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Your browsing history appears here"
+            "value" : "您的浏览记录将在此处显示"
           }
         }
       }
     },
     "Zoom Level" : {
       "localizations" : {
-        "en" : {
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Zoom Level"
+            "value" : "缩放大小"
           }
         }
       }
