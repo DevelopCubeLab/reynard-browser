@@ -40,8 +40,6 @@ struct AboutSettingsSection {
             return linkCell(title: NSLocalizedString("Support The Project", comment: ""))
         case .githubProfile:
             return linkCell(title: "GitHub - @minh-ton")
-        case .translateZH:
-            return linkCell(title: "GitHub - @DevelopLab")
         }
     }
     
@@ -62,8 +60,6 @@ struct AboutSettingsSection {
             return URL(string: "https://buymeacoffee.com/hnimnot")
         case .githubProfile:
             return URL(string: "https://github.com/minh-ton")
-        case .translateZH:
-            return URL(string: "https://github.com/DevelopCubeLab")
         case .appVersion, .engineVersion:
             return nil
         }
