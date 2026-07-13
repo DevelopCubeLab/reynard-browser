@@ -51,11 +51,9 @@ final class PerformanceRecommendationViewController: UIViewController, HomepageR
         var message: String {
             switch self {
             case .enableInAppJIT:
-//                return "Enable JIT to improve performance and ensure websites work properly."
-                return NSLocalizedString("EnableJITMessage", comment: "")
+                return NSLocalizedString("Enable JIT to improve performance and ensure websites work properly.", comment: "")
             case .installTrollStore:
-//                return "Install the TrollStore version of Reynard to enable JIT automatically for improved performance and to ensure websites work properly."
-                return NSLocalizedString("InstallTrollStoreVersionMessage", comment: "")
+                return NSLocalizedString("Install the TrollStore version of Reynard to enable JIT automatically for improved performance and to ensure websites work properly.", comment: "")
             }
         }
         
@@ -73,7 +71,7 @@ final class PerformanceRecommendationViewController: UIViewController, HomepageR
             case .enableInAppJIT:
                 return NSLocalizedString("Open Settings", comment: "")
             case .installTrollStore:
-                return NSLocalizedString("DownloadReynard", comment: "")
+                return NSLocalizedString("Download Reynard (.tipa)", comment: "")
             }
         }
         
@@ -138,8 +136,7 @@ final class PerformanceRecommendationViewController: UIViewController, HomepageR
     private let messageLabel: UILabel = {
         let label = UILabel()
         label.font = .preferredFont(forTextStyle: .body)
-//        label.text = "Enable JIT to improve performance and ensure websites work properly."
-        label.text = NSLocalizedString("EnableJITMessage", comment: "")
+        label.text = NSLocalizedString("Enable JIT to improve performance and ensure websites work properly.", comment: "")
         label.textAlignment = .left
         label.textColor = .secondaryLabel
         label.numberOfLines = 0

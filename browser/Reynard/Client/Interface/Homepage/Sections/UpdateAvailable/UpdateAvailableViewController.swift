@@ -70,7 +70,7 @@ final class UpdateAvailableViewController: UIViewController, HomepageRecommendat
     private let messageLabel: UILabel = {
         let label = UILabel()
         label.font = .preferredFont(forTextStyle: .body)
-        label.text = NSLocalizedString("UpdateAvailableMessage", comment: "")
+        label.text = NSLocalizedString("A new version of Reynard Browser is available. Open Settings to update.", comment: "")
         label.textAlignment = .left
         label.textColor = .secondaryLabel
         label.numberOfLines = 0

@@ -33,7 +33,7 @@ struct RecentlyCloseTabItemActions {
             children.append(
                 UIMenu(title: "", options: .displayInline, children: [
                     UIAction(
-                        title: NSLocalizedString("Remove Recently Closed TabRemove Recently Closed Tab", comment: ""),
+                        title: NSLocalizedString("Remove Recently Closed Tab", comment: ""),
                         image: UIImage(named: "reynard.minus.circle"),
                         attributes: .destructive
                     ) { _ in

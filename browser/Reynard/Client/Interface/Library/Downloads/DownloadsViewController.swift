@@ -63,6 +63,9 @@ final class DownloadsViewController: UIViewController, UITableViewDataSource, UI
         view.delegate = self
         view.rowHeight = UITableView.automaticDimension
         view.estimatedRowHeight = UX.estimatedRowHeight
+        if #available(iOS 14.0, *) {
+            view.selectionFollowsFocus = false
+        }
         if #available(iOS 15.0, *) {
             view.sectionHeaderTopPadding = UX.sectionHeaderTopPadding
         }
@@ -70,7 +73,7 @@ final class DownloadsViewController: UIViewController, UITableViewDataSource, UI
         return view
     }()
     
-    private let emptyStateView = SidebarEmptyBackgroundView(message: NSLocalizedString("DownloadEmptyMessage", comment: ""))
+    private let emptyStateView = SidebarEmptyBackgroundView(message: NSLocalizedString("Files you download appear here", comment: ""))
     private var sections: [DownloadSection] = []
     private var storeObserver: NSObjectProtocol?
     private var appActiveObserver: NSObjectProtocol?
@@ -261,10 +264,10 @@ final class DownloadsViewController: UIViewController, UITableViewDataSource, UI
     
     fileprivate func makeDownloadsMenu() -> UIMenu {
         UIMenu(title: "", children: [
-            UIAction(title: NSLocalizedString("Open Downloads Folder", comment: ""), image: UIImage(named: "reynard.folder")) { [weak self] _ in
+            UIAction(title: "Open in Files", image: UIImage(named: "reynard.folder")) { [weak self] _ in
                 self?.openDownloadsFolder()
             },
-            UIAction(title: NSLocalizedString("Clear Downloads History", comment: ""), image: UIImage(named: "reynard.arrow.down.circle.badge.xmark")) { [weak self] _ in
+            UIAction(title: "Clear Downloads", image: UIImage(named: "reynard.arrow.down.circle.badge.xmark")) { [weak self] _ in
                 self?.showClearDownloads()
             },
         ])
@@ -286,7 +289,7 @@ final class DownloadsViewController: UIViewController, UITableViewDataSource, UI
     
     private func showClearDownloads() {
         let clearViewController = ClearDownloadsViewController { startDate in
-            DownloadStore.shared.clearCompletedDownloads(since: startDate)
+            DownloadStore.shared.clearCompletedDownloadFiles(since: startDate)
         }
         let navigationController = UINavigationController(rootViewController: clearViewController)
         navigationController.modalPresentationStyle = .pageSheet
@@ -344,7 +347,7 @@ final class DownloadsViewController: UIViewController, UITableViewDataSource, UI
     // MARK: - Display State
     
     private func updateEmptyState() {
-        emptyStateView.message = query.isEmpty ? NSLocalizedString("DownloadEmptyMessage", comment: "") : NSLocalizedString("No matching downloads", comment: "")
+        emptyStateView.message = query.isEmpty ? NSLocalizedString("Files you download appear here", comment: "") : NSLocalizedString("No matching downloads", comment: "")
         tableView.backgroundView = sections.isEmpty ? emptyStateView : nil
         emptyStateView.updateContentInsets(from: tableView)
     }
@@ -476,7 +479,7 @@ final class DownloadsViewController: UIViewController, UITableViewDataSource, UI
             }
             shareAction.backgroundColor = .systemGreen
             
-            let openAction = UIContextualAction(style: .normal, title: NSLocalizedString("OpenInFiles", comment: "")) { [weak self] _, _, completion in
+            let openAction = UIContextualAction(style: .normal, title: NSLocalizedString("Open in\nFiles", comment: "Line break intentional")) { [weak self] _, _, completion in
                 guard let self else {
                     completion(false)
                     return
@@ -544,8 +547,7 @@ final class DownloadsViewController: UIViewController, UITableViewDataSource, UI
     ) {
         AlertPresenter.show(
             title: NSLocalizedString("Cancel Download?", comment: ""),
-//            message: "Do you want to stop downloading \(item.fileName)?",
-            message: String.localizedStringWithFormat(NSLocalizedString("StopDownloadingFileMessage", comment: ""), item.fileName),
+            message: String(format: NSLocalizedString("Do you want to stop downloading %@?", comment: "File name"), item.fileName),
             buttons: [
                 AlertPresenter.Button(title: NSLocalizedString("Keep Downloading", comment: ""), style: .cancel) {
                     completion(false)
@@ -577,11 +579,11 @@ final class DownloadsViewController: UIViewController, UITableViewDataSource, UI
         }
         
         var filePath = fileURL.path
-
+        
         if filePath.hasPrefix("/var/") {
             filePath = "/private" + filePath
         }
-
+        
         let encodedPath = filePath.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? ""
         guard let filesURL = URL(string: "shareddocuments://\(encodedPath)") else {
             return

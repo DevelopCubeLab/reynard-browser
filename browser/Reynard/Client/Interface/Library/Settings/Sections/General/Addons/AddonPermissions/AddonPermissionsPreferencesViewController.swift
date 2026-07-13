@@ -298,7 +298,7 @@ final class AddonPermissionsPreferencesViewController: SettingsTableViewControll
                     self.isUpdatingPermissions = false
                     self.addon = addon
                     self.tableView.reloadData()
-                    AlertPresenter.show(title: NSLocalizedString("Failed to update permissions", comment: ""), message: "\(error)")
+                    AlertPresenter.show(title: NSLocalizedString("Couldn’t Update Permissions", comment: ""), message: "\(error)")
                 }
             }
         }
@@ -321,7 +321,7 @@ final class AddonPermissionsPreferencesViewController: SettingsTableViewControll
             }
         } catch {
             await MainActor.run {
-                AlertPresenter.show(title: NSLocalizedString("Failed to reload add-on", comment: ""), message: "\(error)")
+                AlertPresenter.show(title: NSLocalizedString("Couldn’t Reload Add-on", comment: ""), message: "\(error)")
             }
         }
     }

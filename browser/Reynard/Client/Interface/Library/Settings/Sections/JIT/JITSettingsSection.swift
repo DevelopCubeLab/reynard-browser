@@ -52,7 +52,7 @@ final class JITSettingsSection: NSObject {
             cell.accessoryView = jitSwitch
             return cell
         case .importPairingFile:
-            let cell = SettingsViewUtils.actionCell(title: NSLocalizedString("ImportPairingFile", comment: ""), tintColor: tintColor)
+            let cell = SettingsViewUtils.actionCell(title: NSLocalizedString("Import Pairing File…", comment: ""), tintColor: tintColor)
             
             if #available(iOS 16.7, *) {
                 if #unavailable(iOS 17.4) {
@@ -166,7 +166,7 @@ final class JITSettingsSection: NSObject {
         sender.isEnabled = false
         let alert = UIAlertController(
             title: NSLocalizedString("Preparing JIT", comment: ""),
-            message: NSLocalizedString("PreparingJITMessage", comment: ""),
+            message: NSLocalizedString("Since this is your first time enabling JIT, Reynard needs to download and mount the Developer Disk Image. This is required for JIT to work properly.", comment: ""),
             preferredStyle: .alert
         )
         let progressView = UIProgressView(progressViewStyle: .default)
@@ -241,7 +241,7 @@ final class JITSettingsSection: NSObject {
     private func showRestartAlert() {
         let alert = UIAlertController(
             title: NSLocalizedString("Restart Required", comment: ""),
-            message: NSLocalizedString("RestartAppMessage", comment: ""),
+            message: NSLocalizedString("The app will now close for the JIT setting to take effect.", comment: ""),
             preferredStyle: .alert
         )
         alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default) { _ in
@@ -266,7 +266,7 @@ final class JITSettingsSection: NSObject {
         statusLabel.font = statusBoldFont
         statusLabel.adjustsFontForContentSizeCategory = true
         statusLabel.textColor = .systemOrange
-        statusLabel.text = NSLocalizedString("JIT-LessModeActive", comment: "") // "\u{25B2} JIT-Less Mode is Currently Active"
+        statusLabel.text = NSLocalizedString("\u{25B2} JIT-Less Mode is Currently Active", comment: "")
         return statusLabel
     }
     
@@ -276,7 +276,7 @@ final class JITSettingsSection: NSObject {
         detailLabel.font = UIFont.preferredFont(forTextStyle: .footnote)
         detailLabel.adjustsFontForContentSizeCategory = true
         detailLabel.textColor = .secondaryLabel
-        detailLabel.text = NSLocalizedString("EnableJITMessage", comment: "") // "Enable JIT to improve performance and ensure websites work properly."
+        detailLabel.text = NSLocalizedString("Enable JIT to improve performance and ensure websites work properly.", comment: "")
         return detailLabel
     }
     
@@ -286,10 +286,10 @@ final class JITSettingsSection: NSObject {
         warningLabel.font = UIFont.preferredFont(forTextStyle: .footnote)
         warningLabel.adjustsFontForContentSizeCategory = true
         warningLabel.textColor = .systemRed
-        warningLabel.text = NSLocalizedString("JITNotSupportedCurrentOSVersion", comment: "") // "JIT is not supported on the OS version you are using."
+        warningLabel.text = NSLocalizedString("JIT is not supported on the OS version you are using.", comment: "")
         if #available(iOS 17.0, *) {
             if #unavailable(iOS 17.0.1) {
-                warningLabel.text = NSLocalizedString("InstallTrollStoreVersionMessage", comment: "") // "Install the TrollStore version of Reynard to enable JIT automatically for improved performance and to ensure websites work properly."
+                warningLabel.text = NSLocalizedString("Install the TrollStore version of Reynard to enable JIT automatically for improved performance and to ensure websites work properly.", comment: "")
             }
         }
         return warningLabel

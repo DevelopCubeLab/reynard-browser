@@ -15,7 +15,6 @@ struct AboutSettingsSection {
         case sourceCode
         case supportProject
         case githubProfile
-        case translateZH
     }
     
     var rowCount: Int {

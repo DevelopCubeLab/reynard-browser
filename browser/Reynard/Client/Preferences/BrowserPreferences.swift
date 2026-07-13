@@ -82,6 +82,9 @@ final class BrowserPreferences {
             key("AppearanceSettings", "showsLandscapeTabBar"): true,
             key("AppearanceSettings", "defaultPageZoomLevel"): PageZoomLevels.defaultLevel,
             
+            // Languages
+            key("LanguageSettings", "websiteLanguages"): (try? JSONEncoder().encode(WebsiteLanguageCatalog.defaultLanguageCodes())) ?? Data(),
+            
             // Bookmarks
             key("BookmarkSettings", "placeFoldersOnTop"): true,
             key("BookmarkSettings", "sortOrders"): BookmarkSortOrder.none.rawValue,
@@ -104,7 +107,6 @@ final class BrowserPreferences {
             key("ClearBrowsingData", "clearsBrowsingHistory"): true,
             key("ClearBrowsingData", "clearsCookiesAndSiteData"): true,
             key("ClearBrowsingData", "clearsCachedImagesAndFiles"): true,
-            key("ClearBrowsingData", "clearsDownloadsHistory"): false,
             key("ClearBrowsingData", "clearsDownloadedFiles"): false,
             key("ClearBrowsingData", "clearsSitePermissions"): true,
             key("ClearBrowsingData", "clearsOpenedTabs"): true,
@@ -284,15 +286,6 @@ final class BrowserPreferences {
             }
             set {
                 prefs.set(newValue, forSetting: "ClearBrowsingData", key: "clearsCachedImagesAndFiles")
-            }
-        }
-        
-        static var clearsDownloadsHistory: Bool {
-            get {
-                return prefs.bool(forSetting: "ClearBrowsingData", key: "clearsDownloadsHistory")
-            }
-            set {
-                prefs.set(newValue, forSetting: "ClearBrowsingData", key: "clearsDownloadsHistory")
             }
         }
         
@@ -694,6 +687,24 @@ final class BrowserPreferences {
             }
             set {
                 prefs.set(newValue.rawValue, forSetting: "BookmarkSettings", key: "sortOrders")
+            }
+        }
+    }
+    
+    // MARK: - Languages
+    struct LanguageSettings {
+        static var websiteLanguages: [String] {
+            get {
+                guard let data = prefs.data(forSetting: "LanguageSettings", key: "websiteLanguages"),
+                      let values = try? JSONDecoder().decode([String].self, from: data) else {
+                    return WebsiteLanguageCatalog.defaultLanguageCodes()
+                }
+                return WebsiteLanguageCatalog.sanitizedLanguageCodes(values)
+            }
+            set {
+                let values = WebsiteLanguageCatalog.sanitizedLanguageCodes(newValue)
+                let data = try? JSONEncoder().encode(values)
+                prefs.set(data, forSetting: "LanguageSettings", key: "websiteLanguages")
             }
         }
     }

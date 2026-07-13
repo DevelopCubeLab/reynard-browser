@@ -15,15 +15,9 @@ final class HomepagePreferencesViewController: SettingsTableViewController {
         var text: SettingsSectionText {
             switch self {
             case .openingScreen:
-                return SettingsSectionText(
-                    headerTitle: NSLocalizedString("Opening Screen", comment: ""),
-                    footerTitle: NSLocalizedString("Choose what to see when you open Reynard.", comment: "")
-                )
+                return SettingsSectionText(headerTitle: NSLocalizedString("On Startup", comment: ""))
             case .includeOnHomepage:
-                return SettingsSectionText(
-                    headerTitle: NSLocalizedString("Show on Homepage", comment: ""),
-                    footerTitle: NSLocalizedString("Choose what to show on the homepage.", comment: "")
-                )
+                return SettingsSectionText(headerTitle: NSLocalizedString("Homepage Sections", comment: ""))
             }
         }
     }
@@ -91,7 +85,7 @@ final class HomepagePreferencesViewController: SettingsTableViewController {
             let row = HomepageSectionPreferencesViewController.OverviewRow.allCases[indexPath.row]
             let cell = UITableViewCell(style: .value1, reuseIdentifier: nil)
             cell.textLabel?.text = row.title
-            cell.detailTextLabel?.text = row.isEnabled ? NSLocalizedString("On", comment: "") : NSLocalizedString("Off", comment: "")
+            cell.detailTextLabel?.text = row.isEnabled ? NSLocalizedString("On", comment: "Enabled state") : NSLocalizedString("Off", comment: "Disabled state")
             cell.accessoryType = .disclosureIndicator
             return cell
         }

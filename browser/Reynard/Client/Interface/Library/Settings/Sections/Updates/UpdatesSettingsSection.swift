@@ -64,12 +64,12 @@ final class UpdatesSettingsSection {
     }
     
     func trollStoreFooterView() -> UIView {
-        return footerView(text: NSLocalizedString("EnableTrollStoreURLSchemeMessage", comment: "")) // "Make sure TrollStore's URL Scheme is enabled."
+        return footerView(text: NSLocalizedString("Make sure TrollStore's URL Scheme is enabled.", comment: ""))
     }
     
     func unsupportedUpdatesFooterView() -> UIView {
         return footerView(
-            text: NSLocalizedString("UnsupportedInAppUpdateMessage", comment: "") // "This build does not support in-app updates. Visit the project's Releases page to download the latest version of the app."
+            text: NSLocalizedString("This build does not support in-app updates. Visit the project's Releases page to download the latest version of the app.", comment: "")
         )
     }
     
@@ -120,7 +120,7 @@ final class UpdatesSettingsSection {
               let latestEntry = versions.first,
               let packageURLString = latestEntry["downloadURL"] as? String,
               let packageURL = URL(string: packageURLString) else {
-            AlertPresenter.show(title: NSLocalizedString("Update Unavailable", comment: ""), message: NSLocalizedString("RetrieveDownloadURLFailedMessage", comment: "")) // "Could not retrieve the download URL."
+            AlertPresenter.show(title: NSLocalizedString("Update Unavailable", comment: ""), message: NSLocalizedString("Could not retrieve the download URL.", comment: ""))
             return
         }
         
@@ -143,7 +143,7 @@ final class UpdatesSettingsSection {
                 from: packageURL,
                 fileName: "Reynard.ipa",
                 expectedSize: expectedSize,
-                message: NSLocalizedString("InstallUpdateTipsMessage", comment: ""), // "When the download finishes, choose the app that you used to sideload Reynard in the share sheet to install the update."
+                message: NSLocalizedString("When the download finishes, choose the app that you used to sideload Reynard in the share sheet to install the update.", comment: ""),
                 viewController: viewController
             )
         }
@@ -166,7 +166,7 @@ final class UpdatesSettingsSection {
             return
         }
         
-        let alert = UIAlertController(title: NSLocalizedString("DownloadingUpdate", comment: ""), message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: NSLocalizedString("Downloading Update", comment: ""), message: message, preferredStyle: .alert)
         let progressView = UIProgressView(progressViewStyle: .default)
         progressView.translatesAutoresizingMaskIntoConstraints = false
         progressView.progress = 0

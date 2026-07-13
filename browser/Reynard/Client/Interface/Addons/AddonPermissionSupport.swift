@@ -38,70 +38,70 @@ private enum AddonHostPermissionKind: Equatable {
 }
 
 public enum AddonPermissionSupport {
-    public static let allowForAllSitesTitle = NSLocalizedString("Allow for all sites", comment: "")
-    public static let allowForAllSitesSubtitle = NSLocalizedString("If you trust this extension, you can give it permission on every website.", comment: "")
-    public static let noPermissionsRequiredDescription = NSLocalizedString("This extension doesn’t require any permissions.", comment: "")
-    public static let noDataCollectionRequiredDescription = NSLocalizedString("The developer says this extension doesn’t require data collection.", comment: "")
-    public static let userScriptsWarning = NSLocalizedString("Unverified scripts can pose security and privacy risks. Only run scripts from extensions or sources you trust.", comment: "")
+    public static let allowForAllSitesTitle = NSLocalizedString("Allow on All Websites", comment: "")
+    public static let allowForAllSitesSubtitle = NSLocalizedString("Allow this add-on to access every website.", comment: "")
+    public static let noPermissionsRequiredDescription = NSLocalizedString("This add-on doesn’t require any permissions.", comment: "")
+    public static let noDataCollectionRequiredDescription = NSLocalizedString("The developer says this add-on doesn’t collect data.", tableName: "AddonLocalizable", comment: "")
+    public static let userScriptsWarning = NSLocalizedString("Unverified scripts can pose security and privacy risks. Only allow scripts from add-ons or sources you trust.", tableName: "AddonLocalizable", comment: "")
     
     private static let permissionDescriptions = [
-        "<all_urls>": NSLocalizedString("Access your data for all websites", comment: ""),
-        "bookmarks": NSLocalizedString("Read and modify bookmarks", comment: ""),
-        "browserSettings": NSLocalizedString("Read and modify browser settings", comment: ""),
-        "browsingData": NSLocalizedString("Clear recent browsing history, cookies, and related data", comment: ""),
-        "clipboardRead": NSLocalizedString("Get data from the clipboard", comment: ""),
-        "clipboardWrite": NSLocalizedString("Input data to the clipboard", comment: ""),
-        "declarativeNetRequest": NSLocalizedString("Block content on any page", comment: ""),
-        "declarativeNetRequestFeedback": NSLocalizedString("Read your browsing history", comment: ""),
-        "devtools": NSLocalizedString("Extend developer tools to access your data in open tabs", comment: ""),
-        "downloads": NSLocalizedString("Download files and read and modify the browser's download history", comment: ""),
-        "downloads.open": NSLocalizedString("Open files downloaded to your device", comment: ""),
-        "find": NSLocalizedString("Read the text of all open tabs", comment: ""),
-        "geolocation": NSLocalizedString("Access your location", comment: ""),
-        "history": NSLocalizedString("Access browsing history", comment: ""),
-        "management": NSLocalizedString("Monitor extension usage and manage themes", comment: ""),
-        "nativeMessaging": NSLocalizedString("Exchange messages with apps other than this one", comment: ""),
-        "notifications": NSLocalizedString("Display notifications to you", comment: ""),
-        "pkcs11": NSLocalizedString("Provide cryptographic authentication services", comment: ""),
-        "privacy": NSLocalizedString("Read and modify privacy settings", comment: ""),
-        "proxy": NSLocalizedString("Control browser proxy settings", comment: ""),
-        "sessions": NSLocalizedString("Access recently closed tabs", comment: ""),
-        "tabHide": NSLocalizedString("Hide and show browser tabs", comment: ""),
-        "tabs": NSLocalizedString("Access browser tabs", comment: ""),
-        "topSites": NSLocalizedString("Access browsing history", comment: ""),
-        "trialML": NSLocalizedString("Download and run AI models on your device", comment: ""),
-        "userScripts": NSLocalizedString("Allow unverified third-party scripts to access your data", comment: ""),
-        "webNavigation": NSLocalizedString("Access browser activity during navigation", comment: ""),
+        "<all_urls>": NSLocalizedString("Access your data on all websites", tableName: "AddonLocalizable", comment: ""),
+        "bookmarks": NSLocalizedString("Read and modify bookmarks", tableName: "AddonLocalizable", comment: ""),
+        "browserSettings": NSLocalizedString("Read and modify browser settings", tableName: "AddonLocalizable", comment: ""),
+        "browsingData": NSLocalizedString("Clear recent browsing history, cookies, and related data", tableName: "AddonLocalizable", comment: ""),
+        "clipboardRead": NSLocalizedString("Get data from the clipboard", tableName: "AddonLocalizable", comment: ""),
+        "clipboardWrite": NSLocalizedString("Input data to the clipboard", tableName: "AddonLocalizable", comment: ""),
+        "declarativeNetRequest": NSLocalizedString("Block content on any page", tableName: "AddonLocalizable", comment: ""),
+        "declarativeNetRequestFeedback": NSLocalizedString("Read your browsing history", tableName: "AddonLocalizable", comment: ""),
+        "devtools": NSLocalizedString("Extend developer tools to access your data in open tabs", tableName: "AddonLocalizable", comment: ""),
+        "downloads": NSLocalizedString("Download files and read and modify the browser’s download history", tableName: "AddonLocalizable", comment: ""),
+        "downloads.open": NSLocalizedString("Open files downloaded to your device", tableName: "AddonLocalizable", comment: ""),
+        "find": NSLocalizedString("Read the text of all open tabs", tableName: "AddonLocalizable", comment: ""),
+        "geolocation": NSLocalizedString("Access your location", tableName: "AddonLocalizable", comment: ""),
+        "history": NSLocalizedString("Access browsing history", tableName: "AddonLocalizable", comment: ""),
+        "management": NSLocalizedString("Monitor add-on usage and manage themes", tableName: "AddonLocalizable", comment: ""),
+        "nativeMessaging": NSLocalizedString("Exchange messages with apps other than this one", tableName: "AddonLocalizable", comment: ""),
+        "notifications": NSLocalizedString("Display notifications to you", tableName: "AddonLocalizable", comment: ""),
+        "pkcs11": NSLocalizedString("Provide cryptographic authentication services", tableName: "AddonLocalizable", comment: ""),
+        "privacy": NSLocalizedString("Read and modify privacy settings", tableName: "AddonLocalizable", comment: ""),
+        "proxy": NSLocalizedString("Control browser proxy settings", tableName: "AddonLocalizable", comment: ""),
+        "sessions": NSLocalizedString("Access recently closed tabs", tableName: "AddonLocalizable", comment: ""),
+        "tabHide": NSLocalizedString("Hide and show browser tabs", tableName: "AddonLocalizable", comment: ""),
+        "tabs": NSLocalizedString("Access browser tabs", tableName: "AddonLocalizable", comment: ""),
+        "topSites": NSLocalizedString("Access browsing history", tableName: "AddonLocalizable", comment: ""),
+        "trialML": NSLocalizedString("Download and run AI models on your device", tableName: "AddonLocalizable", comment: ""),
+        "userScripts": NSLocalizedString("Allow unverified third-party scripts to access your data", tableName: "AddonLocalizable", comment: ""),
+        "webNavigation": NSLocalizedString("Access browser activity during navigation", tableName: "AddonLocalizable", comment: ""),
     ]
     
     private static let dataCollectionShortDescriptions = [
-        "authenticationInfo": NSLocalizedString("authentication information", comment: ""),
-        "bookmarksInfo": NSLocalizedString("bookmarks", comment: ""),
-        "browsingActivity": NSLocalizedString("browsing activity", comment: ""),
-        "financialAndPaymentInfo": NSLocalizedString("financial and payment information", comment: ""),
-        "healthInfo": NSLocalizedString("health information", comment: ""),
-        "locationInfo": NSLocalizedString("location", comment: ""),
-        "personalCommunications": NSLocalizedString("personal communications", comment: ""),
-        "personallyIdentifyingInfo": NSLocalizedString("personally identifying information", comment: ""),
-        "searchTerms": NSLocalizedString("search terms", comment: ""),
-        "technicalAndInteraction": NSLocalizedString("technical and interaction data", comment: ""),
-        "websiteActivity": NSLocalizedString("website activity", comment: ""),
-        "websiteContent": NSLocalizedString("website content", comment: ""),
+        "authenticationInfo": NSLocalizedString("authentication information", tableName: "AddonLocalizable", comment: ""),
+        "bookmarksInfo": NSLocalizedString("bookmarks", tableName: "AddonLocalizable", comment: ""),
+        "browsingActivity": NSLocalizedString("browsing activity", tableName: "AddonLocalizable", comment: ""),
+        "financialAndPaymentInfo": NSLocalizedString("financial and payment information", tableName: "AddonLocalizable", comment: ""),
+        "healthInfo": NSLocalizedString("health information", tableName: "AddonLocalizable", comment: ""),
+        "locationInfo": NSLocalizedString("location", tableName: "AddonLocalizable", comment: ""),
+        "personalCommunications": NSLocalizedString("personal communications", tableName: "AddonLocalizable", comment: ""),
+        "personallyIdentifyingInfo": NSLocalizedString("personally identifying information", tableName: "AddonLocalizable", comment: ""),
+        "searchTerms": NSLocalizedString("search terms", tableName: "AddonLocalizable", comment: ""),
+        "technicalAndInteraction": NSLocalizedString("technical and interaction data", tableName: "AddonLocalizable", comment: ""),
+        "websiteActivity": NSLocalizedString("website activity", tableName: "AddonLocalizable", comment: ""),
+        "websiteContent": NSLocalizedString("website content", tableName: "AddonLocalizable", comment: ""),
     ]
-
+    
     private static let dataCollectionLongDescriptions = [
-        "authenticationInfo": NSLocalizedString("Share authentication information with extension developer", comment: ""),
-        "bookmarksInfo": NSLocalizedString("Share bookmarks information with extension developer", comment: ""),
-        "browsingActivity": NSLocalizedString("Share browsing activity with extension developer", comment: ""),
-        "financialAndPaymentInfo": NSLocalizedString("Share financial and payment information with extension developer", comment: ""),
-        "healthInfo": NSLocalizedString("Share health information with extension developer", comment: ""),
-        "locationInfo": NSLocalizedString("Share location information with extension developer", comment: ""),
-        "personalCommunications": NSLocalizedString("Share personal communications with extension developer", comment: ""),
-        "personallyIdentifyingInfo": NSLocalizedString("Share personally identifying information with extension developer", comment: ""),
-        "searchTerms": NSLocalizedString("Share search terms with extension developer", comment: ""),
-        "technicalAndInteraction": NSLocalizedString("Share technical and interaction data with extension developer", comment: ""),
-        "websiteActivity": NSLocalizedString("Share website activity with extension developer", comment: ""),
-        "websiteContent": NSLocalizedString("Share website content with extension developer", comment: ""),
+        "authenticationInfo": NSLocalizedString("Share authentication information with the add-on developer", tableName: "AddonLocalizable", comment: ""),
+        "bookmarksInfo": NSLocalizedString("Share bookmarks information with the add-on developer", tableName: "AddonLocalizable", comment: ""),
+        "browsingActivity": NSLocalizedString("Share browsing activity with the add-on developer", tableName: "AddonLocalizable", comment: ""),
+        "financialAndPaymentInfo": NSLocalizedString("Share financial and payment information with the add-on developer", tableName: "AddonLocalizable", comment: ""),
+        "healthInfo": NSLocalizedString("Share health information with the add-on developer", tableName: "AddonLocalizable", comment: ""),
+        "locationInfo": NSLocalizedString("Share location information with the add-on developer", tableName: "AddonLocalizable", comment: ""),
+        "personalCommunications": NSLocalizedString("Share personal communications with the add-on developer", tableName: "AddonLocalizable", comment: ""),
+        "personallyIdentifyingInfo": NSLocalizedString("Share personally identifying information with the add-on developer", tableName: "AddonLocalizable", comment: ""),
+        "searchTerms": NSLocalizedString("Share search terms with the add-on developer", tableName: "AddonLocalizable", comment: ""),
+        "technicalAndInteraction": NSLocalizedString("Share technical and interaction data with the add-on developer", tableName: "AddonLocalizable", comment: ""),
+        "websiteActivity": NSLocalizedString("Share website activity with the add-on developer", tableName: "AddonLocalizable", comment: ""),
+        "websiteContent": NSLocalizedString("Share website content with the add-on developer", tableName: "AddonLocalizable", comment: ""),
     ]
     
     public static func localizePermissions(_ permissions: [String], forUpdate: Bool = false) -> [String] {
@@ -219,8 +219,10 @@ public enum AddonPermissionSupport {
             return nil
         }
         
-//        return "The developer says this extension collects: \(formatLocalizedDataCollectionPermissions(localizedPermissions))"
-        return String.localizedStringWithFormat(NSLocalizedString("ExtensionCollectsList", comment: ""), formatLocalizedDataCollectionPermissions(localizedPermissions))
+        return String(
+            format: NSLocalizedString("The developer says this add-on collects: %@", tableName: "AddonLocalizable", comment: "Data collection list"),
+            formatLocalizedDataCollectionPermissions(localizedPermissions)
+        )
     }
     
     public static func optionalDataCollectionDescription(for permissions: [String]) -> String? {
@@ -229,8 +231,10 @@ public enum AddonPermissionSupport {
             return nil
         }
         
-//        return "The developer says the extension wants to collect: \(formatLocalizedDataCollectionPermissions(localizedPermissions))"
-        return String.localizedStringWithFormat(NSLocalizedString("ExtensionWantsCollectsList", comment: ""), formatLocalizedDataCollectionPermissions(localizedPermissions))
+        return String(
+            format: NSLocalizedString("The developer says this add-on wants to collect: %@", tableName: "AddonLocalizable", comment: "Data collection list"),
+            formatLocalizedDataCollectionPermissions(localizedPermissions)
+        )
     }
     
     public static func updateDataCollectionDescription(for permissions: [String]) -> String? {
@@ -239,8 +243,10 @@ public enum AddonPermissionSupport {
             return nil
         }
         
-//        return "New required data collection: The developer says the extension will collect \(formatLocalizedDataCollectionPermissions(localizedPermissions))."
-        return String.localizedStringWithFormat(NSLocalizedString("ExtensionRequiredCollectsList", comment: ""), formatLocalizedDataCollectionPermissions(localizedPermissions))
+        return String(
+            format: NSLocalizedString("New required data collection: The developer says this add-on will collect %@.", comment: "Data collection list"),
+            formatLocalizedDataCollectionPermissions(localizedPermissions)
+        )
     }
     
     public static func updatePermissionDescription(for permissions: [String]) -> String? {
@@ -249,8 +255,10 @@ public enum AddonPermissionSupport {
             return nil
         }
         
-//        return "New required permissions: \(localizedPermissions.joined(separator: " "))"
-        return String.localizedStringWithFormat(NSLocalizedString("NewRequiredPermissionsList", comment: ""), localizedPermissions.joined(separator: " "))
+        return String(
+            format: NSLocalizedString("New required permissions: %@", comment: "Permission list"),
+            localizedPermissions.joined(separator: " ")
+        )
     }
     
     public static func allSiteOriginPermissions(_ origins: [String]) -> [String] {
@@ -296,17 +304,16 @@ public enum AddonPermissionSupport {
     public static func localizeHostPermission(_ permission: String, forUpdate: Bool) -> String? {
         switch hostPermissionKind(for: permission) {
         case .allUrls:
-            return forUpdate ? NSLocalizedString("Access your data for all websites", comment: "").appending(NSLocalizedString(".", comment: "")) : NSLocalizedString("Access your data for all websites", comment: "")
+            let description = NSLocalizedString("Access your data on all websites", tableName: "AddonLocalizable", comment: "")
+            return forUpdate ? description + "." : description
         case .domain(let host):
-//            let description = "Access your data for sites in the \(host) domain"
-//            return forUpdate ? description + "." : description
-            let description = String.localizedStringWithFormat(NSLocalizedString("AccessYourDataInHostDomain", comment: ""), host)
-            return forUpdate ? description.appending(NSLocalizedString(".", comment: "")) : description
+            let format = NSLocalizedString("Access your data on websites in the %@ domain", tableName: "AddonLocalizable", comment: "Domain name")
+            let description = String(format: format, host)
+            return forUpdate ? description + "." : description
         case .site(let host):
-//            let description = "Access your data for \(host)"
-//            return forUpdate ? description + "." : description
-            let description = String.localizedStringWithFormat(NSLocalizedString("AccessDataForHost", comment: ""), host)
-            return forUpdate ? description.appending(NSLocalizedString(".", comment: "")) : description
+            let format = NSLocalizedString("Access your data on %@", tableName: "AddonLocalizable", comment: "Website host")
+            let description = String(format: format, host)
+            return forUpdate ? description + "." : description
         case nil:
             return nil
         }
@@ -317,7 +324,7 @@ public enum AddonPermissionSupport {
             return nil
         }
         
-        return forUpdate ? description.appending(NSLocalizedString(".", comment: "")) : description
+        return forUpdate ? description + "." : description
     }
     
     private static func localizeURLAccessPermissions(_ accessPermissions: [String], forUpdate: Bool) -> [String] {
@@ -340,8 +347,8 @@ public enum AddonPermissionSupport {
             }
             return false
         }) {
-//            return [forUpdate ? "Access your data for all websites." : "Access your data for all websites"]
-            return [forUpdate ? NSLocalizedString("Access your data for all websites", comment: "").appending(NSLocalizedString(".", comment: "")) : NSLocalizedString("Access your data for all websites", comment: "")]
+            let description = NSLocalizedString("Access your data on all websites", tableName: "AddonLocalizable", comment: "")
+            return [forUpdate ? description + "." : description]
         }
         
         return formatURLAccessPermissions(hostPermissions, forUpdate: forUpdate)
@@ -365,35 +372,37 @@ public enum AddonPermissionSupport {
                 guard domainCount <= maxShownPermissionsEntries else {
                     continue
                 }
-//                let description = "Access your data for sites in the \(host) domain"
-//                descriptions.append(forUpdate ? description + "." : description)
-                let description = String.localizedStringWithFormat(NSLocalizedString("AccessYourDataInHostDomain", comment: ""), host)
-                descriptions.append(forUpdate ? description.appending(NSLocalizedString(".", comment: "")) : description)
+                let format = NSLocalizedString("Access your data on websites in the %@ domain", tableName: "AddonLocalizable", comment: "Domain name")
+                let description = String(format: format, host)
+                descriptions.append(forUpdate ? description + "." : description)
             case .site(let host):
                 siteCount += 1
                 guard siteCount <= maxShownPermissionsEntries else {
                     continue
                 }
-//                let description = "Access your data for \(host)"
-//                descriptions.append(forUpdate ? description + "." : description)
-                let description = String.localizedStringWithFormat(NSLocalizedString("AccessDataForHost", comment: ""), host)
-                descriptions.append(forUpdate ? description.appending(NSLocalizedString(".", comment: "")) : description)
+                let format = NSLocalizedString("Access your data on %@", tableName: "AddonLocalizable", comment: "Website host")
+                let description = String(format: format, host)
+                descriptions.append(forUpdate ? description + "." : description)
             }
         }
         
         if domainCount > maxShownPermissionsEntries {
             if domainCount - maxShownPermissionsEntries == 1 {
-                descriptions.append(forUpdate ? NSLocalizedString("Access your data on another domain", comment: "").appending(NSLocalizedString(".", comment: "")) : NSLocalizedString("Access your data on another domain", comment: ""))
+                let description = NSLocalizedString("Access your data on another domain", tableName: "AddonLocalizable", comment: "")
+                descriptions.append(forUpdate ? description + "." : description)
             } else {
-                descriptions.append(forUpdate ? NSLocalizedString("Access your data on other domain", comment: "").appending(NSLocalizedString(".", comment: "")) : NSLocalizedString("Access your data on other domain", comment: ""))
+                let description = NSLocalizedString("Access your data on other domains", tableName: "AddonLocalizable", comment: "")
+                descriptions.append(forUpdate ? description + "." : description)
             }
         }
         
         if siteCount > maxShownPermissionsEntries {
             if siteCount - maxShownPermissionsEntries == 1 {
-                descriptions.append(forUpdate ? NSLocalizedString("Access your data on another site", comment: "").appending(NSLocalizedString(".", comment: "")) : NSLocalizedString("Access your data on another site", comment: ""))
+                let description = NSLocalizedString("Access your data on another website", tableName: "AddonLocalizable", comment: "")
+                descriptions.append(forUpdate ? description + "." : description)
             } else {
-                descriptions.append(forUpdate ? NSLocalizedString("Access your data on other site", comment: "").appending(NSLocalizedString(".", comment: "")) : NSLocalizedString("Access your data on other site", comment: ""))
+                let description = NSLocalizedString("Access your data on other websites", tableName: "AddonLocalizable", comment: "")
+                descriptions.append(forUpdate ? description + "." : description)
             }
         }
         

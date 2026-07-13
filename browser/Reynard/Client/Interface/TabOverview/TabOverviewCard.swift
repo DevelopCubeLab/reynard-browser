@@ -34,6 +34,7 @@ final class TabOverviewCard: UICollectionViewCell {
         static let tabTitleMaximumWidthAdjustment: CGFloat = -24
         static let tabTitleFontSize: CGFloat = 14
         static let reorderLiftAnimationDuration: TimeInterval = 0.18
+        static let swipeDismissMaximumFade: CGFloat = 0.35
     }
     
     enum TransitionState {
@@ -49,6 +50,7 @@ final class TabOverviewCard: UICollectionViewCell {
     static let reuseIdentifier = "TabOverviewCard"
     
     var onClose: (() -> Void)?
+    private(set) var tabID: UUID?
     
     private static let fallbackFaviconImage = UIImage(named: "reynard.globe")
     private(set) var transitionState: TransitionState = .visible
@@ -171,17 +173,20 @@ final class TabOverviewCard: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        tabID = nil
         webpagePreviewImageView.image = nil
         faviconImageView.image = Self.fallbackFaviconImage
         onClose = nil
         updateWebpagePreviewShadowColor()
         setTransitionState(.visible)
         setReorderState(.resting, animated: false)
+        setSwipeOffset(0, progress: 0)
     }
     
     // MARK: - Content
     
     func configure(with tab: Tab) {
+        tabID = tab.id
         tabTitleLabel.text = tab.title.isEmpty ? NSLocalizedString("Homepage", comment: "") : tab.title
         webpagePreviewImageView.image = tab.thumbnail
         faviconImageView.image = tab.favicon ?? Self.fallbackFaviconImage
@@ -251,6 +256,11 @@ final class TabOverviewCard: UICollectionViewCell {
     func isCloseButton(at point: CGPoint) -> Bool {
         let pointInButton = convert(point, to: closeTabButton)
         return closeTabButton.containsHitTarget(pointInButton)
+    }
+    
+    func setSwipeOffset(_ offset: CGFloat, progress: CGFloat) {
+        transform = CGAffineTransform(translationX: offset, y: 0)
+        contentView.alpha = 1 - (min(max(progress, 0), 1) * UX.swipeDismissMaximumFade)
     }
     
     // MARK: - View Setup

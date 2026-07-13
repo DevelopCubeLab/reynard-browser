@@ -14,6 +14,7 @@ struct GeneralSettingsSection {
         case search
         case newTab
         case homepage
+        case languages
         case appearance
         case compatibility
     }
@@ -38,6 +39,8 @@ struct GeneralSettingsSection {
             return SettingsViewUtils.disclosureCell(title: NSLocalizedString("New Tab", comment: ""))
         case .homepage:
             return SettingsViewUtils.disclosureCell(title: NSLocalizedString("Homepage", comment: ""))
+        case .languages:
+            return SettingsViewUtils.disclosureCell(title: NSLocalizedString("Languages", comment: ""))
         case .appearance:
             return SettingsViewUtils.disclosureCell(title: NSLocalizedString("Appearance", comment: ""))
         case .compatibility:
@@ -62,6 +65,8 @@ struct GeneralSettingsSection {
             destination = NewTabPreferencesViewController()
         case .homepage:
             destination = HomepagePreferencesViewController()
+        case .languages:
+            destination = LanguagesPreferencesViewController()
         case .appearance:
             destination = AppearancePreferencesViewController()
         case .compatibility:

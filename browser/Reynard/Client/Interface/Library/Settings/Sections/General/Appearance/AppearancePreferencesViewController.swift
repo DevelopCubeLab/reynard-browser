@@ -23,7 +23,7 @@ final class AppearancePreferencesViewController: SettingsTableViewController {
             case .tabs:
                 return SettingsSectionText(headerTitle: NSLocalizedString("Tabs", comment: ""))
             case .pageZoom:
-                return SettingsSectionText(headerTitle: NSLocalizedString("Page Zoom", comment: ""))
+                return SettingsSectionText(headerTitle: NSLocalizedString("Websites", comment: ""))
             }
         }
         
@@ -133,13 +133,13 @@ final class AppearancePreferencesViewController: SettingsTableViewController {
             return cell
         case .landscapeTabBar:
             let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-            cell.textLabel?.text = NSLocalizedString("Landscape Tab Bar", comment: "")
+            cell.textLabel?.text = NSLocalizedString("Show Tab Bar in Landscape", comment: "")
             cell.selectionStyle = .none
             cell.accessoryView = landscapeTabBarSwitch
             return cell
         case .pageZoom:
             let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-            cell.textLabel?.text = NSLocalizedString("Zoom Settings", comment: "")
+            cell.textLabel?.text = NSLocalizedString("Page Zoom", comment: "")
             cell.accessoryType = .disclosureIndicator
             return cell
         }

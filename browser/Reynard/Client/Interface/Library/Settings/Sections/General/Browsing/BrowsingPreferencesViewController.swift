@@ -102,7 +102,6 @@ final class BrowsingPreferencesViewController: SettingsTableViewController {
             let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
             cell.selectionStyle = .none
             cell.textLabel?.text = NSLocalizedString("Show Link Previews", comment: "")
-            cell.detailTextLabel?.text = NSLocalizedString("When long-pressing links", comment: "")
             cell.detailTextLabel?.textColor = .secondaryLabel
             cell.accessoryView = showLinkPreviewsSwitch
             return cell
@@ -124,7 +123,6 @@ final class BrowsingPreferencesViewController: SettingsTableViewController {
                 let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
                 cell.selectionStyle = .none
                 cell.textLabel?.text = NSLocalizedString("Show Image Previews", comment: "")
-                cell.detailTextLabel?.text = NSLocalizedString("When long-pressing images", comment: "")
                 cell.detailTextLabel?.textColor = .secondaryLabel
                 cell.accessoryView = showImagePreviewsSwitch
                 return cell
@@ -135,7 +133,7 @@ final class BrowsingPreferencesViewController: SettingsTableViewController {
             }
             let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
             cell.selectionStyle = .none
-            cell.textLabel?.text = NSLocalizedString("All Website", comment: "")
+            cell.textLabel?.text = NSLocalizedString("All Websites", comment: "")
             cell.accessoryView = requestDesktopWebsiteSwitch
             return cell
         }

@@ -71,6 +71,9 @@ final class BookmarksViewController: UIViewController, UITableViewDataSource, UI
         tableView.delegate = self
         tableView.keyboardDismissMode = .interactive
         tableView.separatorStyle = .singleLine
+        if #available(iOS 14.0, *) {
+            tableView.selectionFollowsFocus = false
+        }
         if #available(iOS 15.0, *) {
             tableView.sectionHeaderTopPadding = UX.sectionHeaderTopPadding
         }
@@ -474,10 +477,10 @@ final class BookmarksViewController: UIViewController, UITableViewDataSource, UI
     private func makeSortMenu() -> UIMenu {
         let selectedOrder = Prefs.BookmarkSettings.sortOrders
         let sortOptions: [(title: String, order: BookmarkSortOrder)] = [
-            (NSLocalizedString("None", comment: ""), .none),
-            (NSLocalizedString("Date Added", comment: ""), .date_added),
-            (NSLocalizedString("Name", comment: ""), .name),
-            (NSLocalizedString("Address", comment: ""), .address),
+            (NSLocalizedString("None", comment: "Sort option"), .none),
+            (NSLocalizedString("Date Added", comment: "Sort option"), .date_added),
+            (NSLocalizedString("Name", comment: "Sort option"), .name),
+            (NSLocalizedString("Address", comment: "Sort option"), .address),
         ]
         let menu = UIMenu(
             title: NSLocalizedString("Sort By", comment: ""),
@@ -525,15 +528,7 @@ final class BookmarksViewController: UIViewController, UITableViewDataSource, UI
     private func reloadFolder() {
         let snapshot = store.contents(of: folderID)
         sections = makeBookmarkSections(from: snapshot.items)
-        // Set a title and resolve the issue of Favorites not being correctly i18n.
-        if snapshot.parent.title == "Favorites" {
-            title = NSLocalizedString("Favorites", comment: "")
-        } else if snapshot.parent.title == "Bookmarks" {
-            title = NSLocalizedString("Bookmarks", comment: "")
-        } else {
-            title = snapshot.parent.title
-        }
-//        title = snapshot.parent.title == "Favorites" ? NSLocalizedString("Favorites", comment: "") : snapshot.parent.title
+        title = snapshot.parent.title
         updateEmptyState()
         tableView.reloadData()
     }

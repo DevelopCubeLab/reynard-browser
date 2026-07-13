@@ -186,7 +186,7 @@ final class SettingsViewController: SettingsTableViewController {
     // MARK: - View Setup
     
     private func configureViewController() {
-        title = "Settings"
+        title = NSLocalizedString("Settings", comment: "")
         jitSection.attach(to: self)
     }
     

@@ -10,12 +10,6 @@ import UIKit
 final class UserAgentOverridesPreferencesViewController: SettingsTableViewController {
     private enum Section: CaseIterable {
         case overrides
-        
-        var text: SettingsSectionText {
-            return SettingsSectionText(
-                footerTitle: NSLocalizedString("UserAgentOverridesWebsiteFooterText", comment: "")
-            )
-        }
     }
     
     private enum Row {
@@ -66,7 +60,7 @@ final class UserAgentOverridesPreferencesViewController: SettingsTableViewContro
             cell.textLabel?.text = domain
             cell.selectionStyle = .default
         case .addWebsite:
-            cell.textLabel?.text = NSLocalizedString("Add Website", comment: "").appending("...")
+            cell.textLabel?.text = NSLocalizedString("Add Website…", comment: "")
             cell.textLabel?.textColor = tableView.tintColor
         }
         return cell
@@ -101,17 +95,10 @@ final class UserAgentOverridesPreferencesViewController: SettingsTableViewContro
         }
     }
     
-    override func sectionText(for section: Int) -> SettingsSectionText {
-        guard Section.allCases.indices.contains(section) else {
-            return SettingsSectionText()
-        }
-        return Section.allCases[section].text
-    }
-    
     private func promptForOverrideDomain() {
         let alert = UIAlertController(title: NSLocalizedString("Add Website", comment: ""), message: nil, preferredStyle: .alert)
         alert.addTextField { field in
-            field.placeholder = NSLocalizedString("AddWebsitePlaceholder", comment: "")
+            field.placeholder = NSLocalizedString("e.g. youtube.com", comment: "")
             field.autocorrectionType = .no
             field.autocapitalizationType = .none
             field.keyboardType = .URL

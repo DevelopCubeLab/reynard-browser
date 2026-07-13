@@ -33,6 +33,7 @@ public class GeckoSession {
     
     public func updateSettings(_ settings: GeckoSessionSettings) {
         self.settings = settings
+        GeckoRuntime.setLocale(acceptLanguages: settings.language.acceptLanguages)
         
         guard isOpen() else { return }
         
@@ -60,6 +61,12 @@ public class GeckoSession {
     public var navigationDelegate: NavigationDelegate? {
         get { navigationHandler.delegate(as: NavigationDelegate.self) }
         set { navigationHandler.setDelegate(newValue) }
+    }
+    
+    lazy var historyHandler = newHistoryHandler(self)
+    public var historyDelegate: HistoryDelegate? {
+        get { historyHandler.delegate(as: HistoryDelegate.self) }
+        set { historyHandler.setDelegate(newValue) }
     }
     
     lazy var permissionHandler = newPermissionHandler(self)
@@ -102,6 +109,7 @@ public class GeckoSession {
         contentHandler,
         processHangHandler,
         navigationHandler,
+        historyHandler,
         permissionHandler,
         progressHandler,
         promptHandler,
@@ -137,6 +145,8 @@ public class GeckoSession {
         id = windowId ?? UUID().uuidString.replacingOccurrences(of: "-", with: "")
         
         let sessionSettings = settings
+        GeckoRuntime.setLocale(acceptLanguages: sessionSettings.language.acceptLanguages)
+        
         let settings: [String: Any?] = [
             "chromeUri": nil,
             "screenId": 0,
@@ -178,6 +188,7 @@ public class GeckoSession {
     public func close() {
         contentDelegate = nil
         navigationDelegate = nil
+        historyDelegate = nil
         permissionDelegate = nil
         progressDelegate = nil
         promptDelegate = nil

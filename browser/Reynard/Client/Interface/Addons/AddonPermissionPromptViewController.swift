@@ -182,7 +182,7 @@ final class AddonPermissionPromptViewController: UITableViewController {
                 cell.textLabel?.text = value
             case .showAllSites:
                 cell.textLabel?.font = .preferredFont(forTextStyle: .body)
-                cell.textLabel?.text = NSLocalizedString("Show All Sites", comment: "")
+                cell.textLabel?.text = NSLocalizedString("Show All Websites", comment: "")
                 cell.textLabel?.textColor = view.tintColor
                 cell.selectionStyle = .default
                 cell.accessoryType = .disclosureIndicator
@@ -289,18 +289,14 @@ final class AddonPermissionPromptViewController: UITableViewController {
         
         switch prompt.kind {
         case .install:
-//            return "Add \(addonName)?"
-            return String.localizedStringWithFormat(NSLocalizedString("AddAdd-OnName", comment: ""), addonName)
+            return String(format: NSLocalizedString("Add %@?", comment: "Add-on name"), addonName)
         case .optional:
             if prompt.permissions.isEmpty && prompt.origins.isEmpty && !prompt.dataCollectionPermissions.isEmpty {
-//                return "\(addonName) requests additional data collection."
-                return String.localizedStringWithFormat(NSLocalizedString("AddAdd-OnRequestsDataCollection", comment: ""), addonName)
+                return String(format: NSLocalizedString("%@ requests additional data collection.", comment: "Add-on name"), addonName)
             }
-//            return "\(addonName) requests additional permissions."
-            return String.localizedStringWithFormat(NSLocalizedString("AddAdd-OnRequestsPermissions", comment: ""), addonName)
+            return String(format: NSLocalizedString("%@ requests additional permissions.", comment: "Add-on name"), addonName)
         case .update:
-//            return "\(addonName) has been updated. You must approve additional permissions before the updated version will install. Dismissing this prompt will maintain your current add-on version."
-            return String.localizedStringWithFormat(NSLocalizedString("AddAdd-OnUpdated", comment: ""), addonName)
+            return String(format: NSLocalizedString("%@ has been updated. Approve the additional permissions before the updated version is installed. Dismissing this prompt keeps your current add-on version.", comment: "Add-on name"), addonName)
         }
     }
     
@@ -308,8 +304,8 @@ final class AddonPermissionPromptViewController: UITableViewController {
         var rows: [PermissionRow] = []
         
         if !domains.isEmpty {
-//            rows.append(.domainHeader("Access your data for sites in \(domains.count) domains"))
-            rows.append(.domainHeader(String.localizedStringWithFormat(NSLocalizedString("AccessDataDomainsNums", comment: ""), domains.count)))
+            let domainText = String.localizedStringWithFormat(NSLocalizedString("%d domains", comment: "Domain count"), domains.count)
+            rows.append(.domainHeader(String(format: NSLocalizedString("Access your data on websites in %@", comment: "Domain count text"), domainText)))
             rows.append(.showAllSites)
         }
         
@@ -370,7 +366,7 @@ private final class AddonPromptSiteListViewController: UITableViewController {
     init(sites: [String]) {
         self.sites = sites
         super.init(style: .insetGrouped)
-        title = NSLocalizedString("Sites", comment: "")
+        title = NSLocalizedString("Websites", comment: "")
     }
     
     required init?(coder: NSCoder) {

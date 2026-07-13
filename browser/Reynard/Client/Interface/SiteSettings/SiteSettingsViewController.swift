@@ -15,6 +15,7 @@ final class SiteSettingsViewController: UITableViewController {
         case availability
         case media
         case permissions
+        case resetAction
     }
     
     private enum Row: CaseIterable {
@@ -34,11 +35,11 @@ final class SiteSettingsViewController: UITableViewController {
             case .microphone:
                 return NSLocalizedString("Microphone", comment: "")
             case .location:
-                return NSLocalizedString("LocationServices", comment: "")
+                return NSLocalizedString("Location", comment: "")
             case .persistentStorage:
                 return NSLocalizedString("Persistent Storage", comment: "")
             case .crossOriginStorageAccess:
-                return NSLocalizedString("Cross-site Cookies", comment: "")
+                return NSLocalizedString("Cross-Site Cookies", comment: "")
             case .localDeviceAccess:
                 return NSLocalizedString("Device Apps and Services", comment: "")
             case .localNetworkAccess:
@@ -82,10 +83,6 @@ final class SiteSettingsViewController: UITableViewController {
         .camera,
         .microphone,
         .location,
-        .persistentStorage,
-        .crossOriginStorageAccess,
-        .localDeviceAccess,
-        .localNetworkAccess,
     ]
     private let host: String
     private let origin: String
@@ -102,6 +99,7 @@ final class SiteSettingsViewController: UITableViewController {
         
         sections.append(.media)
         sections.append(.permissions)
+        sections.append(.resetAction)
         return sections
     }
     
@@ -115,8 +113,7 @@ final class SiteSettingsViewController: UITableViewController {
         self.origin = origin
         self.session = session
         super.init(style: .insetGrouped)
-//        title = "Settings for \(host)"
-        title = String.localizedStringWithFormat(NSLocalizedString("SettingsForHost", comment: ""), host)
+        title = String(format: NSLocalizedString("Settings for %@", comment: "Website host"), host)
     }
     
     required init?(coder: NSCoder) {
@@ -146,7 +143,9 @@ final class SiteSettingsViewController: UITableViewController {
         case .media:
             return loadState == .loaded ? mediaRows.count : 0
         case .permissions:
-            return loadState == .loaded ? permissionRows.count + 1 : 0
+            return loadState == .loaded ? permissionRows.count : 0
+        case .resetAction:
+            return loadState == .loaded ? 1 : 0
         }
     }
     
@@ -162,6 +161,8 @@ final class SiteSettingsViewController: UITableViewController {
             return NSLocalizedString("Media", comment: "")
         case .permissions:
             return NSLocalizedString("Permissions", comment: "")
+        case .resetAction:
+            return nil
         }
     }
     
@@ -179,10 +180,9 @@ final class SiteSettingsViewController: UITableViewController {
         case .media:
             return permissionCell(at: indexPath)
         case .permissions:
-            if indexPath.row == permissionRows.count {
-                return resetSitePermissionsCell()
-            }
             return permissionCell(at: indexPath)
+        case .resetAction:
+            return resetWebsiteSettingsCell()
         }
     }
     
@@ -197,11 +197,9 @@ final class SiteSettingsViewController: UITableViewController {
         case .media:
             handlePermissionSelection(at: indexPath)
         case .permissions:
-            if indexPath.row == permissionRows.count {
-                confirmResetSitePermissions()
-            } else {
-                handlePermissionSelection(at: indexPath)
-            }
+            handlePermissionSelection(at: indexPath)
+        case .resetAction:
+            confirmResetWebsiteSettings()
         }
         
         tableView.deselectRow(at: indexPath, animated: true)
@@ -264,12 +262,11 @@ final class SiteSettingsViewController: UITableViewController {
         return cell
     }
     
-    private func resetSitePermissionsCell() -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
-        cell.textLabel?.text = NSLocalizedString("Reset Permissions for this Site", comment: "")
+    private func resetWebsiteSettingsCell() -> UITableViewCell {
+        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        cell.textLabel?.text = NSLocalizedString("Reset Settings for This Website", comment: "")
         cell.textLabel?.textColor = .systemRed
-        cell.detailTextLabel?.text = nil
-        cell.detailTextLabel?.textColor = .secondaryLabel
+        cell.textLabel?.textAlignment = .center
         cell.accessoryView = nil
         cell.accessoryType = .none
         cell.selectionStyle = .default
@@ -286,7 +283,7 @@ final class SiteSettingsViewController: UITableViewController {
             return mediaRows[safe: indexPath.row]
         case .permissions:
             return permissionRows[safe: indexPath.row]
-        case .availability:
+        case .availability, .resetAction:
             return nil
         }
     }
@@ -307,10 +304,12 @@ final class SiteSettingsViewController: UITableViewController {
             return
         }
         
-        if #available(iOS 17.4, *),
-           let cell = tableView.cellForRow(at: indexPath),
-           let button = cell.accessoryView as? UIButton {
-            button.performPrimaryAction()
+        if #available(iOS 14.0, *) {
+            if #available(iOS 17.4, *),
+               let cell = tableView.cellForRow(at: indexPath),
+               let button = cell.accessoryView as? UIButton {
+                button.performPrimaryAction()
+            }
             return
         }
         
@@ -417,21 +416,20 @@ final class SiteSettingsViewController: UITableViewController {
         )
     }
     
-    private func confirmResetSitePermissions() {
+    private func confirmResetWebsiteSettings() {
         AlertPresenter.show(
             title: nil,
-//            message: "This action will reset permissions for this site. It cannot be undone.",
-            message: NSLocalizedString("This action will reset permissions for all sites. It cannot be undone.", comment: ""),
+            message: NSLocalizedString("This will reset settings for this website. This action cannot be undone.", comment: ""),
             buttons: [
-                AlertPresenter.Button(title: NSLocalizedString("OK", comment: ""), style: .destructive) { [weak self] in
-                    self?.performResetSitePermissions()
+                AlertPresenter.Button(title: NSLocalizedString("Reset", comment: "Destructive button"), style: .destructive) { [weak self] in
+                    self?.performResetWebsiteSettings()
                 },
                 AlertPresenter.Button(title: NSLocalizedString("Cancel", comment: "")),
             ]
         )
     }
     
-    private func performResetSitePermissions() {
+    private func performResetWebsiteSettings() {
         for permission in loadedGeckoPermissions {
             PermissionDelegate.removePermission(permission)
         }

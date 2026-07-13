@@ -77,10 +77,10 @@ extension DownloadSection {
             sections.append(DownloadSection(title: NSLocalizedString("Yesterday", comment: ""), items: yesterdayItems))
         }
         if !previousSevenDayItems.isEmpty {
-            sections.append(DownloadSection(title: String.localizedStringWithFormat(NSLocalizedString("PreviousDays", comment: ""), 7), items: previousSevenDayItems))
+            sections.append(DownloadSection(title: NSLocalizedString("Previous 7 Days", comment: ""), items: previousSevenDayItems))
         }
         if !previousThirtyDayItems.isEmpty {
-            sections.append(DownloadSection(title: String.localizedStringWithFormat(NSLocalizedString("PreviousDays", comment: ""), 30), items: previousThirtyDayItems))
+            sections.append(DownloadSection(title: NSLocalizedString("Previous 30 Days", comment: ""), items: previousThirtyDayItems))
         }
     }
     

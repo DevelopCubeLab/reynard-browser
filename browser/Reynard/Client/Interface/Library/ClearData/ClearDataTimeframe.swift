@@ -13,19 +13,6 @@ enum ClearDataTimeframe: Int, CaseIterable {
     case todayAndYesterday
     case allTime
     
-    var title: String {
-        switch self {
-        case .lastHour:
-            return NSLocalizedString("Last hour", comment: "")
-        case .today:
-            return NSLocalizedString("Today", comment: "")
-        case .todayAndYesterday:
-            return NSLocalizedString("Today and yesterday", comment: "")
-        case .allTime:
-            return NSLocalizedString("All history", comment: "")
-        }
-    }
-    
     func cutoffDate(from now: Date = Date(), calendar: Calendar = .current) -> Date? {
         switch self {
         case .lastHour:
@@ -39,9 +26,23 @@ enum ClearDataTimeframe: Int, CaseIterable {
         }
     }
     
-    static func configureCell(_ cell: UITableViewCell, at indexPath: IndexPath, selectedTimeframe: ClearDataTimeframe) {
+    static func configureCell(
+        _ cell: UITableViewCell,
+        at indexPath: IndexPath,
+        selectedTimeframe: ClearDataTimeframe,
+        allTimeTitle: String = NSLocalizedString("All History", comment: "")
+    ) {
         let option = allCases[indexPath.row]
-        cell.textLabel?.text = option.title
+        switch option {
+        case .lastHour:
+            cell.textLabel?.text = NSLocalizedString("Last Hour", comment: "")
+        case .today:
+            cell.textLabel?.text = NSLocalizedString("Today", comment: "")
+        case .todayAndYesterday:
+            cell.textLabel?.text = NSLocalizedString("Today and Yesterday", comment: "")
+        case .allTime:
+            cell.textLabel?.text = allTimeTitle
+        }
         cell.accessoryView = nil
         cell.accessoryType = option == selectedTimeframe ? .checkmark : .none
         cell.selectionStyle = .default

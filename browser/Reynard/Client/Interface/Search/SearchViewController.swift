@@ -200,8 +200,7 @@ final class SearchViewController: UIViewController, UITableViewDataSource, UITab
         case .primarySuggestion:
             return results.bestMatch == nil ? nil : bestMatchSpacerView
         case .typedQuery:
-//            return hasQuery ? makeSectionHeaderView(title: "\(viewModel.searchSuggestionProvider.name) Suggestions") : nil
-            return hasQuery ? makeSectionHeaderView(title: String.localizedStringWithFormat(NSLocalizedString("SearchSuggestionProviderName", comment: ""), viewModel.searchSuggestionProvider.name)) : nil
+            return hasQuery ? makeSectionHeaderView(title: String(format: NSLocalizedString("%@ Suggestions", comment: "Search provider name"), viewModel.searchSuggestionProvider.name)) : nil
         case .completions:
             return nil
         case .userDataResults:

@@ -38,11 +38,6 @@ final class AddonInformationPreferencesViewController: SettingsTableViewControll
     
     private let addonID: String
     private var addon: Addon?
-    private let reviewCountFormatter: NumberFormatter = {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        return formatter
-    }()
     private let displayDateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
@@ -94,7 +89,7 @@ final class AddonInformationPreferencesViewController: SettingsTableViewControll
         rows.append(InformationRow(title: NSLocalizedString("Version", comment: ""), value: metaData.version, link: nil))
         
         if let updateDate = updateDateText(metaData.updateDate) {
-            rows.append(InformationRow(title: NSLocalizedString("Last updated", comment: ""), value: updateDate, link: nil))
+            rows.append(InformationRow(title: NSLocalizedString("Last Updated", comment: ""), value: updateDate, link: nil))
         }
         
         if let ratingText = ratingText(metaData) {
@@ -116,7 +111,7 @@ final class AddonInformationPreferencesViewController: SettingsTableViewControll
         }
         
         if let listingURL = normalizedURLString(metaData.amoListingURL) {
-            rows.append(InformationRow(title: NSLocalizedString("More about this extension", comment: ""), value: listingURL, link: listingURL))
+            rows.append(InformationRow(title: NSLocalizedString("More About This Add-on", comment: ""), value: listingURL, link: listingURL))
         }
         
         return rows
@@ -259,7 +254,7 @@ final class AddonInformationPreferencesViewController: SettingsTableViewControll
             }
         } catch {
             await MainActor.run {
-                AlertPresenter.show(title: NSLocalizedString("Failed to reload add-on", comment: ""), message: "\(error)")
+                AlertPresenter.show(title: NSLocalizedString("Couldn’t Reload Add-on", comment: ""), message: "\(error)")
             }
         }
     }
@@ -291,13 +286,13 @@ final class AddonInformationPreferencesViewController: SettingsTableViewControll
         
         let roundedRating = String(format: "%.2f", averageRating)
         if let reviewCount = metaData.reviewCount {
-            let reviewText = reviewCountFormatter.string(from: NSNumber(value: reviewCount)) ?? "\(reviewCount)"
-//            return "\(roundedRating) out of 5 • Reviews: \(reviewText)"
-            return String.localizedStringWithFormat(NSLocalizedString("Add-OnRatingReviews", comment: ""), roundedRating, reviewText)
+            return String.localizedStringWithFormat(
+                NSLocalizedString("%@ out of 5 • %d Reviews", comment: "Rating and review count"),
+                roundedRating,
+                reviewCount
+            )
         }
         
-
-//        return "\(roundedRating) out of 5"
-        return String.localizedStringWithFormat(NSLocalizedString("Add-OnRating", comment: ""), roundedRating)
+        return String(format: NSLocalizedString("%@ out of 5", comment: "Rating value"), roundedRating)
     }
 }
