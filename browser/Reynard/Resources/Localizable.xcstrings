@@ -1261,6 +1261,17 @@
         }
       }
     },
+    "Custom" : {
+      "comment" : "Search engine option",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自定义"
+          }
+        }
+      }
+    },
     "Custom Search URL" : {
       "localizations" : {
         "zh-Hans" : {
@@ -3550,15 +3561,9 @@
     "URL" : {
       "shouldTranslate" : false
     },
-    "Use %s for search terms, as in example.com⁠/⁠search⁠?⁠q⁠=⁠%s." : {
+    "Use %%s for search terms, as in example.com⁠/⁠search⁠?⁠q⁠=⁠%%s." : {
       "comment" : "Literal %s, word joiners",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Use %1$s for search terms, as in example.com⁠/⁠search⁠?⁠q⁠=⁠%2$s."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
