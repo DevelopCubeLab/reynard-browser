@@ -2324,6 +2324,16 @@
         }
       }
     },
+    "Open in Files" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在文件App中打开"
+          }
+        }
+      }
+    },
     "Open in New Private Tab" : {
       "localizations" : {
         "zh-Hans" : {
